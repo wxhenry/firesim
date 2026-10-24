@@ -69,7 +69,7 @@ class GoldenGateCompilerPhase extends Phase {
     )
     logger.info("Post-GG Host Transformation Ordering\n")
     logger.info(loweringCompiler.prettyPrint("  "))
-    loweringCompiler.execute(simulator)
+    val hostLoweredSimulator = loweringCompiler.execute(simulator)
 
     // Ensure FPGA backend passes run after all user-provided + ILA transforms, but before final emission
     val fpgaBackendCompiler  = new Compiler(
@@ -83,7 +83,7 @@ class GoldenGateCompilerPhase extends Phase {
     )
     logger.info("FPGA Backend Transformation Ordering\n")
     logger.info(fpgaBackendCompiler.prettyPrint("  "))
-    val postLoweredSimulator = fpgaBackendCompiler.execute(simulator)
+    val postLoweredSimulator = fpgaBackendCompiler.execute(hostLoweredSimulator)
 
     // Workaround under-constrained transform dependencies by forcing the
     // emitter to run last in a separate compiler.
