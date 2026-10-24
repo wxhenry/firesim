@@ -31,7 +31,7 @@ class BankConflictMMRegIO(cfg: BankConflictConfig)(implicit p: Parameters) exten
       maskBits      = log2Ceil(cfg.maxBanks),
       longName      = "Bank Address",
       defaultOffset = 13,
-      defaultMask   = (1 << cfg.maxBanks) - 1,
+      defaultMask   = cfg.maxBanks - 1,
     )
   )
 
