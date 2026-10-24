@@ -578,7 +578,7 @@ class FASEDMemoryTimingModel(completeConfig: firesim.lib.bridges.CompleteConfig,
     }
 
     val rrespError = RegEnable(toHostDRAM.r.bits.resp, 0.U, toHostDRAM.r.bits.resp =/= 0.U && toHostDRAM.r.fire)
-    val brespError = RegEnable(toHostDRAM.r.bits.resp, 0.U, toHostDRAM.b.bits.resp =/= 0.U && toHostDRAM.b.fire)
+    val brespError = RegEnable(toHostDRAM.b.bits.resp, 0.U, toHostDRAM.b.bits.resp =/= 0.U && toHostDRAM.b.fire)
 
     // Generate the configuration registers and tie them to the ctrl bus
     attachIO(model.io.mmReg)
