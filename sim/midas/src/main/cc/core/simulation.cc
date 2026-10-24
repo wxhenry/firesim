@@ -142,11 +142,22 @@ int simulation_t::execute_simulation_flow() {
 
   record_start_times();
   fprintf(stderr, "Commencing simulation.\n");
-  const int exit_code = simulation_run();
+  int exit_code = simulation_run();
   fprintf(stderr, "\nSimulation complete.\n");
   record_end_times();
 
   simulation_finish();
+
+  // Some bridges only discover failures while draining their final output.
+  // Preserve a failure already reported by simulation_run().
+  if (exit_code == 0) {
+    for (auto *bridge : registry.get_all_bridges()) {
+      if (bridge->terminate() && bridge->exit_code() != 0) {
+        exit_code = bridge->exit_code();
+        break;
+      }
+    }
+  }
 
   const bool timeout = simulation_timed_out();
 
