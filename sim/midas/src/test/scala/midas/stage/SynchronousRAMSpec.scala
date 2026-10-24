@@ -10,6 +10,7 @@ import chisel3.util._
 import chisel3.experimental.annotate
 import firrtl.options.TargetDirAnnotation
 import firrtl.stage.FirrtlCircuitAnnotation
+import firrtl.Mappers._
 import midas.{GenerateMultiCycleRamModels, OutputDir, TargetTransforms}
 import midas.stage.phases.ConfigParametersAnnotation
 import midas.targetutils.{FirrtlMemModelAnnotation, MemModelAnnotation}
@@ -29,7 +30,23 @@ class LocalizeRAMRegressionAnnotations extends firrtl.Transform {
     }.distinct)
 }
 
-class SynchronousRAMInner(writeFirst: Boolean, salt: Int) extends Module {
+/** Supply a legal two-cycle FIRRTL memory to exercise more than Chisel's one-cycle SyncReadMem. */
+class SetSynchronousRAMLatencyTwo extends firrtl.Transform {
+  def inputForm  = firrtl.LowForm
+  def outputForm = firrtl.LowForm
+  def execute(state: firrtl.CircuitState): firrtl.CircuitState = {
+    def statement(s: firrtl.ir.Statement): firrtl.ir.Statement = s.map(statement) match {
+      case memory: firrtl.ir.DefMemory => memory.copy(readLatency = 2)
+      case other                       => other
+    }
+    state.copy(circuit = state.circuit.copy(modules = state.circuit.modules.map {
+      case module: firrtl.ir.Module => module.copy(body = statement(module.body))
+      case other                    => other
+    }))
+  }
+}
+
+class SynchronousRAMInner(writeFirst: Boolean, latency: Int, salt: Int) extends Module {
   val io    = IO(new Bundle {
     val cycles    = Output(UInt(32.W))
     val checks    = Output(UInt(32.W))
@@ -54,8 +71,8 @@ class SynchronousRAMInner(writeFirst: Boolean, salt: Int) extends Module {
   val expectedValue =
     if (writeFirst) Mux(writeEnable && writeAddress === readAddress, data, reference(readAddress))
     else reference(readAddress)
-  val expected      = RegEnable(expectedValue, readEnable)
-  val valid         = RegNext(readEnable, false.B)
+  val expected      = ShiftRegister(expectedValue, latency)
+  val valid         = ShiftRegister(readEnable, latency, false.B, true.B)
   val checks        = RegInit(0.U(32.W))
   val errors        = RegInit(0.U(32.W))
   val signature     = RegInit(0.U(32.W))
@@ -70,7 +87,7 @@ class SynchronousRAMInner(writeFirst: Boolean, salt: Int) extends Module {
   io.signature := signature
 }
 
-class SynchronousRAMTarget(writeFirst: Boolean) extends Module {
+class SynchronousRAMTarget(writeFirst: Boolean, latency: Int) extends Module {
   val io     = IO(new Bundle {
     val cycles    = Output(UInt(32.W))
     val checks    = Output(UInt(32.W))
@@ -78,7 +95,7 @@ class SynchronousRAMTarget(writeFirst: Boolean) extends Module {
     val signature = Output(UInt(32.W))
   })
   val models = (0 until 2).map { i =>
-    val model = Module(new SynchronousRAMInner(writeFirst, 100))
+    val model = Module(new SynchronousRAMInner(writeFirst, latency, 100))
     model
   }
   io.cycles := models.head.io.cycles
@@ -91,20 +108,23 @@ class SynchronousRAMSpec extends AnyFlatSpec {
   behavior.of("Golden Gate synchronous RAM models")
 
   for {
+    latency    <- Seq(1, 2)
     writeFirst <- Seq(false, true)
     mode       <- Seq("control", "ram-model")
   } {
-    it should s"preserve enabled-read latency and read/write collisions with writeFirst=$writeFirst, $mode" in {
+    it should s"preserve $latency-cycle enabled-read latency and read/write collisions with writeFirst=$writeFirst, $mode" in {
       val parent                 = Files.createDirectories(Paths.get("test_run_dir", suiteName))
-      val output                 = Files.createTempDirectory(parent, s"$mode-$writeFirst-").toAbsolutePath
+      val output                 = Files.createTempDirectory(parent, s"$mode-$writeFirst-latency$latency-").toAbsolutePath
       println(s"Synchronous RAM regression output: $output")
       val parameters             = (new firesim.configs.DefaultF1Config).alterPartial {
         case GenerateMultiCycleRamModels => mode != "control"
-        case TargetTransforms            => Seq(firrtl.options.Dependency[LocalizeRAMRegressionAnnotations])
+        case TargetTransforms            =>
+          Seq(firrtl.options.Dependency[LocalizeRAMRegressionAnnotations]) ++
+            (if (latency == 2) Seq(firrtl.options.Dependency[SetSynchronousRAMLatencyTwo]) else Nil)
         case OutputDir                   => output.toFile
       }
       val (circuit, annotations) = midas.ElaborateChiselSubCircuit(
-        new firesim.lib.testutils.PeekPokeHarness(() => new SynchronousRAMTarget(writeFirst))
+        new firesim.lib.testutils.PeekPokeHarness(() => new SynchronousRAMTarget(writeFirst, latency))
       )
       val input                  = annotations ++ Seq(
         FirrtlCircuitAnnotation(circuit),
