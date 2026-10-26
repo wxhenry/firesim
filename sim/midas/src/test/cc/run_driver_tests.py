@@ -7,6 +7,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import signal
 import subprocess
 import sys
 import time
@@ -19,8 +20,12 @@ def main():
     parser.add_argument("--output", type=Path, required=True,
                         help="New directory for raw logs, binaries, and source fingerprints")
     parser.add_argument("--cxx", default=os.environ.get("CXX", "g++"))
+    parser.add_argument("--timeout", type=float, default=180,
+                        help="Total build/test deadline in seconds (default: 180)")
     parser.add_argument("--suite", choices=["all", "fased", "simulation", "scheduler"], default="all")
     args = parser.parse_args()
+    if args.timeout <= 0:
+        parser.error("--timeout must be positive")
     source = args.source_root.resolve() / "sim/midas/src/main/cc"
     tests = Path(__file__).resolve().parent
     output = args.output.resolve()
@@ -38,8 +43,15 @@ def main():
             "trailing-garbage", "empty"]),
         "simulation": ("simulation_flow_test.cc", [
             "success", "late-failure", "early-failure", "multiple-failures",
-            "success-before-failure", "nonterminating", "timeout"]),
+            "success-before-failure", "nonterminating", "timeout",
+            "init-pending", "init-invalid", "init-unavailable",
+            "init-wait-timeout", "init-wait-ready", "init-wait-invalid",
+            "init-timeout-zero", "init-timeout-negative", "init-timeout-overflow",
+            "init-timeout-upper", "init-timeout-empty", "init-timeout-trailing",
+            "init-timeout-plus", "init-timeout-space", "init-timeout-duplicate",
+            "init-timeout-min", "init-timeout-max"]),
         "scheduler": ("fased_scheduler_test.cc", ["profile-lifetime", "no-profile"]),
+
     }
     files.extend(["bridges/peek_poke.cc", "core/systematic_scheduler.cc"])
     top = args.source_root.resolve() / "sim/src/main/cc/fasedtests/fasedtests_top.cc"
@@ -59,14 +71,31 @@ def main():
         "started_at_utc": datetime.now(timezone.utc).isoformat(),
         "build_timeout_seconds": 180,
         "case_timeout_seconds": 20,
+        "total_timeout_seconds": args.timeout,
         "randomness": "none (deterministic register-level tests)",
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     start = time.monotonic()
+    deadline = start + args.timeout
     results = {"suites": {}, "hardware_access": False}
     # AddrRangeCounter has an existing raw allocation without a destructor;
     # this suite diagnoses invalid accesses, not unrelated exit-time leaks.
     env = dict(os.environ, ASAN_OPTIONS="detect_leaks=0:detect_stack_use_after_return=1")
+
+    def run_bounded(command, stdout, stderr, timeout, cwd=None):
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            stderr.write("\nTotal build/test deadline exceeded.\n")
+            return 124
+        process = subprocess.Popen(command, stdout=stdout, stderr=stderr,
+                                   cwd=cwd, env=env, start_new_session=True)
+        try:
+            return process.wait(timeout=min(timeout, remaining))
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGKILL)
+            process.wait()
+            stderr.write("\nBuild/test deadline exceeded; process group stopped.\n")
+            return 124
     for suite, (test_file, case_names) in suites.items():
         if args.suite not in ("all", suite):
             continue
@@ -79,11 +108,7 @@ def main():
                    *[str(source / f) for f in files], "-lgmp", "-o", str(binary)]
         (suite_output / "build-command.json").write_text(json.dumps(command, indent=2) + "\n")
         with (suite_output / "build.stdout").open("w") as stdout, (suite_output / "build.stderr").open("w") as stderr:
-            try:
-                build_code = subprocess.run(command, stdout=stdout, stderr=stderr, timeout=180).returncode
-            except subprocess.TimeoutExpired:
-                stderr.write("\nBuild exceeded 180-second timeout.\n")
-                build_code = 124
+            build_code = run_bounded(command, stdout, stderr, 180)
         suite_result = {"build_exit_code": build_code, "cases": {}}
         results["suites"][suite] = suite_result
         if build_code != 0:
@@ -93,12 +118,7 @@ def main():
             work = suite_output / name
             work.mkdir()
             with (work / "stdout.log").open("w") as stdout, (work / "stderr.log").open("w") as stderr:
-                try:
-                    code = subprocess.run([str(binary), name], cwd=work, env=env,
-                                          stdout=stdout, stderr=stderr, timeout=20).returncode
-                except subprocess.TimeoutExpired:
-                    stderr.write("\nCase exceeded 20-second timeout.\n")
-                    code = 124
+                code = run_bounded([str(binary), name], stdout, stderr, 20, cwd=work)
             suite_result["cases"][name] = code
             print(f"{suite}/{name}: {'PASS' if code == 0 else 'FAIL'} ({code})", flush=True)
     results["elapsed_seconds"] = time.monotonic() - start

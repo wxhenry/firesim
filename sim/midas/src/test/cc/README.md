@@ -43,3 +43,15 @@ AddressSanitizer stack-use-after-return detection is enabled. Leak checking is
 disabled because `AddrRangeCounter` has an existing raw allocation without a
 destructor; these regressions do not claim leak-free operation. They also do not
 establish generated-RTL correctness, FPGA compatibility or hardware acceptance.
+
+## Initialization, entry and widget-control regressions
+
+The simulation suite also rejects invalid INIT_DONE values and bounds returned
+pending responses with a paced initialization deadline. The deadline cannot
+interrupt a blocked physical access. `run_entry_tests.py --output <new-directory>`
+checks native exception reporting and cleanup.
+
+The Scala suites `midas.MCRFileSpec` and `midas.MCRPaddingSpec` compile the actual
+MCRFile into Verilator models. They check stable AXI responses under backpressure,
+one source handshake per request, reset while a response is pending, and
+completion of padding slots without accessing a real register.
