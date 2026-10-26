@@ -58,7 +58,7 @@ class GoldenGateCompilerPhase extends Phase {
     // to avoid breakages that can emerge from "legal" but unsound pass orderings
     // due to underspecified pass constraints + invalidations
     // Shunt ILA passes to a seperate compiler to avoid invalidating downstream steps
-    val loweringCompiler = new Compiler(
+    val loweringCompiler     = new Compiler(
       targets      = Seq(
         Dependency(midas.passes.AutoILATransform),
         Dependency(midas.passes.HostClockWiring),

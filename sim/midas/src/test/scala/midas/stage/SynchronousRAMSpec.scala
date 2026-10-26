@@ -94,7 +94,7 @@ class SynchronousRAMTarget(writeFirst: Boolean, latency: Int) extends Module {
     val errors    = Output(UInt(32.W))
     val signature = Output(UInt(32.W))
   })
-  val models = (0 until 2).map { i =>
+  val models = (0 until 2).map { _ =>
     val model = Module(new SynchronousRAMInner(writeFirst, latency, 100))
     model
   }
@@ -105,6 +105,7 @@ class SynchronousRAMTarget(writeFirst: Boolean, latency: Int) extends Module {
 }
 
 class SynchronousRAMSpec extends AnyFlatSpec {
+  protected def hostTimingHold = false
   behavior.of("Golden Gate synchronous RAM models")
 
   for {
@@ -117,11 +118,14 @@ class SynchronousRAMSpec extends AnyFlatSpec {
       val output                 = Files.createTempDirectory(parent, s"$mode-$writeFirst-latency$latency-").toAbsolutePath
       println(s"Synchronous RAM regression output: $output")
       val parameters             = (new firesim.configs.DefaultF1Config).alterPartial {
-        case GenerateMultiCycleRamModels => mode != "control"
-        case TargetTransforms            =>
+        case GenerateMultiCycleRamModels            => mode != "control"
+        case TargetTransforms                       =>
           Seq(firrtl.options.Dependency[LocalizeRAMRegressionAnnotations]) ++
             (if (latency == 2) Seq(firrtl.options.Dependency[SetSynchronousRAMLatencyTwo]) else Nil)
-        case OutputDir                   => output.toFile
+        case midas.HostPayloadHoldEnabled           => hostTimingHold
+        case midas.HostTriggerSnapshotEnabled       => hostTimingHold
+        case midas.HostTargetOutputIsolationEnabled => hostTimingHold
+        case OutputDir                              => output.toFile
       }
       val (circuit, annotations) = midas.ElaborateChiselSubCircuit(
         new firesim.lib.testutils.PeekPokeHarness(() => new SynchronousRAMTarget(writeFirst, latency))
@@ -191,4 +195,9 @@ class SynchronousRAMSpec extends AnyFlatSpec {
       )
     }
   }
+}
+
+/** Run the same behavioral checks with optional host timing treatment enabled. */
+class SynchronousRAMHostTimingSpec extends SynchronousRAMSpec {
+  override protected def hostTimingHold = true
 }
