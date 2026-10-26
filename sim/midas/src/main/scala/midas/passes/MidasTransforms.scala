@@ -233,7 +233,7 @@ private[midas] class MidasTransforms extends Transform {
         new EmitFirrtl("post-gen-sram-models.fir"),
         new fame.EmitFAMEAnnotations("post-gen-sram-models.json"),
         new SimulationMapping(internalState.circuit.main),
-        xilinx.HostSpecialization,
+        new xilinx.ConfiguredHostSpecialization(p(midas.HostClockGateModuleName)),
         new ResolveAndCheck,
       )
     (xforms.foldLeft(internalState))((in, xform) => xform.runTransform(in)).copy(form = outputForm)

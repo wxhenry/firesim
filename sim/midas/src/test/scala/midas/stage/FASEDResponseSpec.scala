@@ -66,6 +66,7 @@ class FASEDResponseTarget extends Module {
 }
 
 class FASEDResponseSpec extends AnyFlatSpec {
+  protected def hostTimingHold = false
   behavior.of("FASED host response error registers")
   private lazy val output = {
     val parent = Files.createDirectories(Paths.get("test_run_dir", suiteName))
@@ -80,7 +81,7 @@ class FASEDResponseSpec extends AnyFlatSpec {
   }
   private lazy val binary = {
     val parameters             = (new firesim.configs.DefaultF1Config).alterPartial {
-      case firesim.configs.MemModelKey =>
+      case firesim.configs.MemModelKey            =>
         new LatencyPipeConfig(
           BaseParams(
             maxReads               = 2,
@@ -94,7 +95,10 @@ class FASEDResponseSpec extends AnyFlatSpec {
             occupancyHistograms    = Nil,
           )
         )
-      case OutputDir                   => output.toFile
+      case midas.HostPayloadHoldEnabled           => hostTimingHold
+      case midas.HostTriggerSnapshotEnabled       => hostTimingHold
+      case midas.HostTargetOutputIsolationEnabled => hostTimingHold
+      case OutputDir                              => output.toFile
     }
     val (circuit, annotations) = midas.ElaborateChiselSubCircuit(
       new firesim.lib.testutils.PeekPokeHarness(() => new FASEDResponseTarget)
@@ -168,4 +172,9 @@ class FASEDResponseSpec extends AnyFlatSpec {
       assert(run(Seq(binary, scenario), scenario) == 0, s"Response diagnostic failed; see $output")
     }
   }
+}
+
+/** Run the same behavioral checks with optional host timing treatment enabled. */
+class FASEDHostTimingSpec extends FASEDResponseSpec {
+  override protected def hostTimingHold = true
 }
