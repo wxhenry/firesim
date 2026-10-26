@@ -1,0 +1,16 @@
+{
+  "public_upload": false,
+  "base": "775352329d91adc4125201c3d617af9103f17feb",
+  "candidate_commit": "493f57d533065c138ba55bf1a17b70bd0be52777",
+  "equivalent_final_source": "2d940133f27fae547972889be18ca1557587e476",
+  "files": [
+    "CHANGELOG.md",
+    "docs/FireSim-Basics.rst",
+    "docs/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-V80-SLASH-FPGAs.rst",
+    "docs/index.rst",
+    "platforms/xilinx_alveo_v80_slash/README.md",
+    "platforms/xilinx_alveo_v80_slash/VALIDATION.md"
+  ],
+  "state": "local-doc-boundary",
+  "source_tree_equivalence": true
+}

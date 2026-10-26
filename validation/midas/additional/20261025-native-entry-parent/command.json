@@ -1,0 +1,15 @@
+[
+  "g++",
+  "-std=c++17",
+  "-O1",
+  "-g",
+  "-fsanitize=address",
+  "-fno-omit-frame-pointer",
+  "-fno-pie",
+  "-no-pie",
+  "-I<UPSTREAM>/firesim-scala-build/sim/midas/src/main/cc",
+  "<UPSTREAM>/runs/20261025-native-entry-parent/parent-main.cc",
+  "<UPSTREAM>/firesim-scala-build/sim/midas/src/test/cc/native_entry_stub.cc",
+  "-o",
+  "<UPSTREAM>/runs/20261025-native-entry-parent/native-entry-test"
+]

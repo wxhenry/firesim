@@ -1,0 +1,62 @@
+{
+  "exit_code": 0,
+  "hardware_access": false,
+  "total_timeout_seconds": 180,
+  "source_sha256": {
+    "<V80_WORKSPACE>/upstream/firesim-publication-20261026/platforms/xilinx_alveo_v80_slash/deployment.py": "2f8792031906eb4e304a1e7cdfc84c0b64eded734b4753bc8062c6c4ffad54ad",
+    "<V80_WORKSPACE>/upstream/firesim-publication-20261026/platforms/xilinx_alveo_v80_slash/tests/test_deployment.py": "a11420bfe51f3895b2f697b383ea794b46c4c88a4c7b6ddb5e8e014d5779cda6"
+  },
+  "tests_exit_code": 0,
+  "replayed_original_autoila_audit": {
+    "slrs": [
+      {
+        "slr": 0,
+        "error_status": "0x0000000000000000000000000000000000000000",
+        "done": true
+      },
+      {
+        "slr": 1,
+        "error_status": "0x0000000000000000000000000000000000000002",
+        "done": true
+      },
+      {
+        "slr": 2,
+        "error_status": "0x0000000000000000000000000000000000000004",
+        "done": true
+      }
+    ],
+    "ssit_vectors": [
+      [
+        3735928558,
+        3735928558,
+        3735928559
+      ],
+      [
+        3735928558,
+        3735928559,
+        3735928559
+      ],
+      [
+        3735928558,
+        3735928559,
+        3735928559
+      ]
+    ],
+    "partial_load_required": true
+  },
+  "evidence_sha256": {
+    "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance/device-programmed-registers.txt": "53f80e9f5796c5b0e53c5861c88fa9f491826ac1817db5769df5d1364bca0e4f",
+    "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance/device-programmed-slr0.bin": "a769675debbcc9ec0379042f9ad713db6c266a0516ace1d33e6733cb49db2bbe",
+    "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance/device-programmed-slr1.bin": "7dfc9704de92a4f353dd1b212e9af1790415014a3b450a5c6d28ea7dc1779cf6",
+    "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance/device-programmed-slr2.bin": "fa673da2931b1a8bdbc3b53f3c6bdc7b44118748251f5954770b5852729ce28e"
+  },
+  "local_official_firmware_source_sha256": {
+    "common/server/xplmi_debug.c": "8b75269aaabb161d2ed648b0f1662b361b3574aba988de0dbb7c23c0ed5bc6a7",
+    "common/server/xplmi_event_logging.h": "0ca7a38ad1c84979f40835af12b3b1e81535d629e9d99daaa9978d5aafe5d074",
+    "common/server/xplmi_event_logging.c": "de383ada115a688f39071030f0bb4b37f5876cb91d6d15cf398f2e541bd32103",
+    "common/server/xplmi.h": "69fec2edb68c0dae7db7993c2ccb6ad93d579e585c5b825b36e48d512b541f57",
+    "versal/server/xplmi_hw.h": "40b36dd41bd619481349e4d7eaabb49fa56d821c97a456c6b06e1df46fe281d3"
+  },
+  "state": "completed",
+  "elapsed_seconds": 1.6844424750015605
+}

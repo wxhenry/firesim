@@ -1,0 +1,2 @@
+<FIRESIM>/sim/test_run_dir/FASEDResponseSpec/responses-3983897114162709102/obj/VFPGATop
+read-control

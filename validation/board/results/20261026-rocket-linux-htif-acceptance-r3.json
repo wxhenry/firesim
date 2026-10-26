@@ -1,0 +1,106 @@
+{
+  "exit_code": 0,
+  "new_hardware_access": false,
+  "public_upload": false,
+  "total_timeout_seconds": 120,
+  "original_trial": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2",
+  "physical_acceptance_passed": true,
+  "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/board-acceptance.json",
+  "kernel_banner": true,
+  "userspace_nonce": true,
+  "riscv_userspace": true,
+  "disk_rw": true,
+  "shutdown": true,
+  "original_disk_unchanged": true,
+  "target_cycles": 953909890,
+  "shutdown_evidence": "Guest poweroff -f followed by FESVR/HTIF normal exit 0; native PASS below the target-cycle cap. Final UART shutdown line was truncated.",
+  "scope": "Linux boot, root shell, private-disk synced read/write and HTIF forced poweroff on matching current Rocket; no guest networking or full service shutdown claim",
+  "inputs": [
+    {
+      "path": "<V80_WORKSPACE>/framework/cy-clone/chipyard/software/firemarshal/images/firechip/br-base/br-base-bin",
+      "sha256": "ed41276517fdf463b8407091c4f80dafd0c4ec9ec8e948935d550b11b35ee4c5",
+      "size": 20958816
+    },
+    {
+      "path": "<V80_WORKSPACE>/framework/cy-clone/chipyard/software/firemarshal/images/firechip/br-base/br-base.img",
+      "sha256": "6723fd43073a96d7bb24542c7962b0e4798c6dfaf3d465634e508a6879396408",
+      "size": 536870912
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/generators/firechip/bridgestubs/src/main/cc/bridges/blockdev.h",
+      "sha256": "bf026d6d1d8473c83e56c0e1889bef4c29a891a65902627f4f488d7a0bfb17f7",
+      "size": 2785
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/generators/firechip/bridgestubs/src/main/cc/bridges/tsibridge.cc",
+      "sha256": "be9f0b0e37064dd4dc6cf2063d890f51e363362388a1a4e00fadd33ff12caf09",
+      "size": 7301
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/generators/firechip/bridgestubs/src/main/cc/bridges/uart.h",
+      "sha256": "c7815bf93a71802fd6932d95a68d7bf1ef60477bc6b1b860bb0a9bd1f144d55d",
+      "size": 1393
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/generators/firechip/chip/src/main/cc/firesim/firesim_top.cc",
+      "sha256": "8bcef03225b34b9126bc2bca981375fbf8aa417f5ca64db42f6ac9d61d699b73",
+      "size": 2823
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/sims/firesim/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h",
+      "sha256": "10a77d4694fbae471f91f561890d7eb354466c3c6db2dd13aefcc1d30a57e00b",
+      "size": 5924
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/sims/firesim/sim/midas/src/main/cc/bridges/heartbeat.h",
+      "sha256": "1a540ef74a49cb78b0c01fc0a620653a88f6248f59f53ab43e4aafb3644faf11",
+      "size": 1259
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/sims/firesim/sim/midas/src/main/cc/bridges/reset_pulse.h",
+      "sha256": "075694a87fe4c8fe52f30f3cb643af12d6232b8b44c6fa80c1f6186a99593c5b",
+      "size": 959
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/chipyard-guarded-cpu-20261026/sims/firesim/sim/midas/src/main/cc/core/bridge_driver.h",
+      "sha256": "cb49b41680bce2ceed3cac3bb65334c046c6c77e63d98c6b4b3945dfaae602cc",
+      "size": 3236
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/deployments/20261026-rocket-guarded-candidate/FireSim-generated.const.h",
+      "sha256": "cbc4db2671427d424e85bdabca996b3d2809e3add9bec5b655c938f81d00d12e",
+      "size": 14457
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/command.json",
+      "sha256": "987a0b6a72272f076ee675ff4ec1c77b7a0fc1f5c867e289defc857ad9d695a0",
+      "size": 1134
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/board-acceptance.json",
+      "sha256": "ec3faa51fc3f3a98765e209fb86fa542b4a922e39408fb0de680fe1563e4575c",
+      "size": 12843
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/controller.json",
+      "sha256": "ca6268dcf1fe6f3a0cb7f2226ea5e374134f35ebae081ecca9ed14d7287a1555",
+      "size": 310
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/native-driver.stderr.log",
+      "sha256": "819f8f117b5fd620716b546b8f04f70bacc2db382bc90241e8116ebf04319e2b",
+      "size": 407
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/result.json",
+      "sha256": "8e10df3f2fcc0fff9d302614013ae1653c4053d6ed8fde6f048b8b3bd5458f62",
+      "size": 1332
+    },
+    {
+      "path": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/work/uart-console.log",
+      "sha256": "1ecd21154a5f2810e386b39b59a430ca79190e7218ef74d939e8fc1b705bd396",
+      "size": 14007
+    }
+  ],
+  "elapsed_seconds": 0.9650236629968276
+}

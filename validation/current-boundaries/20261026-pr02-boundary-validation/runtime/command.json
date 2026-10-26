@@ -1,0 +1,13 @@
+[
+  "python3",
+  "-B",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/sim/midas/src/test/cc/run_slash_runtime_tests.py",
+  "--source-root",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026",
+  "--output",
+  "<V80_WORKSPACE>/upstream/runs/20261026-pr02-boundary-validation/runtime-results",
+  "--sdk-prefix",
+  "<V80_WORKSPACE>/upstream/slash-sdk-install",
+  "--dependency-prefix",
+  "<V80_WORKSPACE>/framework/cy-clone/chipyard/.conda-env"
+]

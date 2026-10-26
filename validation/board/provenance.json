@@ -1,0 +1,446 @@
+[
+  {
+    "path": "baseline/README.md",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/README.md",
+    "raw_sha256": "14ecaede3ec318184509d2cdfaf9911cc430270aa98630afac905d89cc0de0ea",
+    "sanitized_sha256": "14ecaede3ec318184509d2cdfaf9911cc430270aa98630afac905d89cc0de0ea"
+  },
+  {
+    "path": "baseline/gcd/stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/gcd/stderr.log",
+    "raw_sha256": "742ca0effc45c7323258106d20f3d7b56a66ec55af5ab5236e82c10cefe40577",
+    "sanitized_sha256": "742ca0effc45c7323258106d20f3d7b56a66ec55af5ab5236e82c10cefe40577"
+  },
+  {
+    "path": "baseline/gcd/stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/gcd/stdout.log",
+    "raw_sha256": "6b0764fd09ad43df85d94d12930d75bd58046f0c8bad65ef97c990f1b3f6f751",
+    "sanitized_sha256": "6b0764fd09ad43df85d94d12930d75bd58046f0c8bad65ef97c990f1b3f6f751"
+  },
+  {
+    "path": "baseline/log-provenance.json",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/log-provenance.json",
+    "raw_sha256": "08a4e5055556104694fa91dc0ca5f2907a2504db59e3410e9be9205d6eb47bad",
+    "sanitized_sha256": "08a4e5055556104694fa91dc0ca5f2907a2504db59e3410e9be9205d6eb47bad"
+  },
+  {
+    "path": "baseline/manifest.json",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/manifest.json",
+    "raw_sha256": "e4ca100c8ff958f0b9088e927c950b8ef0a6bfe3ddf45da415a7e4a3962915ed",
+    "sanitized_sha256": "e4ca100c8ff958f0b9088e927c950b8ef0a6bfe3ddf45da415a7e4a3962915ed"
+  },
+  {
+    "path": "baseline/runtime-boundary/stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/runtime-boundary/stderr.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "baseline/runtime-boundary/stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/runtime-boundary/stdout.log",
+    "raw_sha256": "27eb7eed30c30f93c430bd6b7ce4d706a0ee6cc20e277e4911e1fd7febf9f9db",
+    "sanitized_sha256": "27eb7eed30c30f93c430bd6b7ce4d706a0ee6cc20e277e4911e1fd7febf9f9db"
+  },
+  {
+    "path": "baseline/sdk-boundary/stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/sdk-boundary/stderr.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "baseline/sdk-boundary/stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/sdk-boundary/stdout.log",
+    "raw_sha256": "84fd447a4c4e4b1228f18540eb5c5f95a2fd271f1f7a6494e6572c67e69a6a5f",
+    "sanitized_sha256": "84fd447a4c4e4b1228f18540eb5c5f95a2fd271f1f7a6494e6572c67e69a6a5f"
+  },
+  {
+    "path": "baseline/summary.json",
+    "source": "<V80_WORKSPACE>/upstream/review/shareable-board-validation-20261026-r1/summary.json",
+    "raw_sha256": "cb493fcdf964bd0dae8505c7490411ab240eda97f188fd487145b4d344c4e634",
+    "sanitized_sha256": "cb493fcdf964bd0dae8505c7490411ab240eda97f188fd487145b4d344c4e634"
+  },
+  {
+    "path": "20261026-rocket-board-rv64ui-p-add/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64ui-p-add/native-driver.stdout.log",
+    "raw_sha256": "17dd7b1b8fe58e0e8b2f4dfff7ca4598681b507f3af1ed1f40691650da172790",
+    "sanitized_sha256": "aad82abc3fa0212dadd248d042774b597807307034864f8f70c1822c26862faa"
+  },
+  {
+    "path": "20261026-rocket-board-rv64ui-p-add/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64ui-p-add/native-driver.stderr.log",
+    "raw_sha256": "c299a6d2643b1ff4065c3afa6acc4eda568a726d964eb1dc9020c77e0504e691",
+    "sanitized_sha256": "c299a6d2643b1ff4065c3afa6acc4eda568a726d964eb1dc9020c77e0504e691"
+  },
+  {
+    "path": "20261026-rocket-board-rv64ui-p-add/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64ui-p-add/board-acceptance.json",
+    "raw_sha256": "05fff2725351164db7dd21c5e3b25069c94e842a16408f9ecde58a2eb6f2fd05",
+    "sanitized_sha256": "05fff2725351164db7dd21c5e3b25069c94e842a16408f9ecde58a2eb6f2fd05"
+  },
+  {
+    "path": "20261026-rocket-board-rv64ui-p-add/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64ui-p-add/controller.json",
+    "raw_sha256": "353c00bc007759fbfc926e083a467038bec1243f716b511b1c51c500e416eaf6",
+    "sanitized_sha256": "9a5679726e90e6fbc939533773de09a0ee4471096348dfe1ded3ca386fb2fcb0"
+  },
+  {
+    "path": "20261026-rocket-board-rv64um-p-mul/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64um-p-mul/native-driver.stdout.log",
+    "raw_sha256": "6142a9a1e81e8a02472d6d1d13ad7c964f203e8dff5c912253cffe0d5058f6e6",
+    "sanitized_sha256": "942d3a85abaae8921ea4a4893917c85cf97c5038d50f0725c9467aeccf24d987"
+  },
+  {
+    "path": "20261026-rocket-board-rv64um-p-mul/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64um-p-mul/native-driver.stderr.log",
+    "raw_sha256": "5822b0fa27a4d848fbc770dc7c08dceff153c7ae93b1d28397bc252564ad5786",
+    "sanitized_sha256": "5822b0fa27a4d848fbc770dc7c08dceff153c7ae93b1d28397bc252564ad5786"
+  },
+  {
+    "path": "20261026-rocket-board-rv64um-p-mul/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64um-p-mul/board-acceptance.json",
+    "raw_sha256": "35c199caca12d021fb3f217bd7df8aa5d081b9449dc8453c5595a56054f7b097",
+    "sanitized_sha256": "35c199caca12d021fb3f217bd7df8aa5d081b9449dc8453c5595a56054f7b097"
+  },
+  {
+    "path": "20261026-rocket-board-rv64um-p-mul/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64um-p-mul/controller.json",
+    "raw_sha256": "462ec651571abd8afaaabcf6bc260dedf519044ac334cd6050ee22bbe0246c79",
+    "sanitized_sha256": "5800e2e3336743936677637b7c09cdc73f1b13957f400cc987647f6f6eabdcb6"
+  },
+  {
+    "path": "20261026-rocket-board-rv64mi-p-csr/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64mi-p-csr/native-driver.stdout.log",
+    "raw_sha256": "e028a5c94363f1525467fe795c52dcbb64b62ac40bd8c4beb5316b83487d67c5",
+    "sanitized_sha256": "40cee5361c968392ae096f6a7735d2ff75036ba09be34aa0fafa6c6f2398731d"
+  },
+  {
+    "path": "20261026-rocket-board-rv64mi-p-csr/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64mi-p-csr/native-driver.stderr.log",
+    "raw_sha256": "c7154fc8715123c0ab076238f1a3dbeeeb01954a454173e6357dc3bcff572126",
+    "sanitized_sha256": "c7154fc8715123c0ab076238f1a3dbeeeb01954a454173e6357dc3bcff572126"
+  },
+  {
+    "path": "20261026-rocket-board-rv64mi-p-csr/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64mi-p-csr/board-acceptance.json",
+    "raw_sha256": "8354683847a1eb4e2565874c3a49d6e6c32b72ad25ead1a9d71c96c1fce69ea7",
+    "sanitized_sha256": "8354683847a1eb4e2565874c3a49d6e6c32b72ad25ead1a9d71c96c1fce69ea7"
+  },
+  {
+    "path": "20261026-rocket-board-rv64mi-p-csr/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64mi-p-csr/controller.json",
+    "raw_sha256": "e05a4d3146c499aa7de78517b7c542491f99189f1c4e3f908d6b5206c0f3c0f4",
+    "sanitized_sha256": "ba86bf282bfafd03c3315fe4e00871ff1c755a8cedeb7e921451edf2adf72ac3"
+  },
+  {
+    "path": "20261026-printf-stream-ddr-r2-board-acceptance/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-acceptance/native-driver.stdout.log",
+    "raw_sha256": "da85c644d40d1b8d413d6fa78fd3b3d8fbfe7ea79cf19130a070341828654624",
+    "sanitized_sha256": "1a01b7f8b086bdc7b8e93cbe105248b7658fe652e796606545b4323c0390e481"
+  },
+  {
+    "path": "20261026-printf-stream-ddr-r2-board-acceptance/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-acceptance/native-driver.stderr.log",
+    "raw_sha256": "24bbca9be3423281c3ea707e4bbc4b319d47de839b8b3a5c0f40aa8f09fe5f45",
+    "sanitized_sha256": "24bbca9be3423281c3ea707e4bbc4b319d47de839b8b3a5c0f40aa8f09fe5f45"
+  },
+  {
+    "path": "20261026-printf-stream-ddr-r2-board-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-acceptance/board-acceptance.json",
+    "raw_sha256": "2ade244b85d21e51e5944121f2fbf4254f98c81040d0ff1a14ec974ed3712f90",
+    "sanitized_sha256": "2ade244b85d21e51e5944121f2fbf4254f98c81040d0ff1a14ec974ed3712f90"
+  },
+  {
+    "path": "20261026-printf-stream-ddr-r2-board-acceptance/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-acceptance/controller.json",
+    "raw_sha256": "0317b1bc4c0fd9e630baa906b29c3b7cf7331e6349fd22c92fa45af11e832a9b",
+    "sanitized_sha256": "5e65f91c1a28e83c66892b8043d093c94895f1ee986e9adcfa1c759a4dd328fd"
+  },
+  {
+    "path": "20261026-mmio-zero-ddr-board-acceptance/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-acceptance/native-driver.stdout.log",
+    "raw_sha256": "6ea30c9a4cf1d3a3c7beb511b5b44f0802727ca062a7e5bfaadacfe4ecb93612",
+    "sanitized_sha256": "af40bbd1de11a64e08b6e5c20d61e81d8c5c4501e7311f3561af586a674d926c"
+  },
+  {
+    "path": "20261026-mmio-zero-ddr-board-acceptance/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-acceptance/native-driver.stderr.log",
+    "raw_sha256": "98c054b689b96b2c9927ef32af6a81dded4e94db01aac66bceca2cae5c0d5062",
+    "sanitized_sha256": "98c054b689b96b2c9927ef32af6a81dded4e94db01aac66bceca2cae5c0d5062"
+  },
+  {
+    "path": "20261026-mmio-zero-ddr-board-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-acceptance/board-acceptance.json",
+    "raw_sha256": "4033c41429acf06789d0200e36a992ea4b3a36b0cdd8d1ab3264373a2576fba7",
+    "sanitized_sha256": "4033c41429acf06789d0200e36a992ea4b3a36b0cdd8d1ab3264373a2576fba7"
+  },
+  {
+    "path": "20261026-mmio-zero-ddr-board-acceptance/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-acceptance/controller.json",
+    "raw_sha256": "ef7e87a4d53e9a5fd47537c5949ddecadf70eeb95b2fded33028500d67922eee",
+    "sanitized_sha256": "91ebbdc7f687a7d6c4d4837059bb18746578c912516be774f1641da8142bfd30"
+  },
+  {
+    "path": "20261026-printf-stream-fpga-ddr-r2-board-acceptance/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-acceptance/native-driver.stdout.log",
+    "raw_sha256": "756cf040865aa1910706d192129990d3eb4234674a2df93b99a1efa21a7fa50a",
+    "sanitized_sha256": "62a26bb42d9ff528ab6d128c02c6e71767c5f712816ba52f5be3107358858f68"
+  },
+  {
+    "path": "20261026-printf-stream-fpga-ddr-r2-board-acceptance/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-acceptance/native-driver.stderr.log",
+    "raw_sha256": "c1b0bab44e03abed5f6c339a909e2ba0d059de675cc00d7b96b780678dbd8be6",
+    "sanitized_sha256": "c1b0bab44e03abed5f6c339a909e2ba0d059de675cc00d7b96b780678dbd8be6"
+  },
+  {
+    "path": "20261026-printf-stream-fpga-ddr-r2-board-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-acceptance/board-acceptance.json",
+    "raw_sha256": "37c9cec862b43a2935e436f087f04e82b40cc25b821f4d89b6c3786eaf5fd513",
+    "sanitized_sha256": "37c9cec862b43a2935e436f087f04e82b40cc25b821f4d89b6c3786eaf5fd513"
+  },
+  {
+    "path": "20261026-printf-stream-fpga-ddr-r2-board-acceptance/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-acceptance/controller.json",
+    "raw_sha256": "3a1491d7843400b677ee50e2215987aa3b31a760802b3d0ee90ee806e101655e",
+    "sanitized_sha256": "e758bf402ef238c51cccc355c5c7b8a1cd8c3bfc366b4dd0985661c2ca932fd7"
+  },
+  {
+    "path": "20261026-autocounter-r1-board-acceptance/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-acceptance/native-driver.stdout.log",
+    "raw_sha256": "95293a53756a3088215822d0ec3ee448cc46da300a7561681222f0a88ed185f0",
+    "sanitized_sha256": "355d007a3f13b803bb65e4662cb9ef18a9f57c23337661e42de0b39f080c25c2"
+  },
+  {
+    "path": "20261026-autocounter-r1-board-acceptance/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-acceptance/native-driver.stderr.log",
+    "raw_sha256": "07dbbb7e7432bce7ac2c3c7eaf53c5cba107d56b450acebd253f0203e81b8e82",
+    "sanitized_sha256": "07dbbb7e7432bce7ac2c3c7eaf53c5cba107d56b450acebd253f0203e81b8e82"
+  },
+  {
+    "path": "20261026-autocounter-r1-board-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-acceptance/board-acceptance.json",
+    "raw_sha256": "bdcb42d8440ff70d6246007c6f2f2df7b238337d882f057f21dbef26969327cf",
+    "sanitized_sha256": "bdcb42d8440ff70d6246007c6f2f2df7b238337d882f057f21dbef26969327cf"
+  },
+  {
+    "path": "20261026-autocounter-r1-board-acceptance/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-acceptance/controller.json",
+    "raw_sha256": "882512b2c90453c5220e639bd476635fda724f6563ad644f52cf8806206d4557",
+    "sanitized_sha256": "d9253d2ce523c3518e35d771507eb708c9d49da74224a5348bd4d39df0473016"
+  },
+  {
+    "path": "20261026-autoila-gcd-r1-board-capture-acceptance-r3/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/native-driver.stdout.log",
+    "raw_sha256": "3b9f89d9cde01aea53bd30b61c8e80ec4843d3ae43f3313d223686af109acf73",
+    "sanitized_sha256": "4c09d768f5ea22b28abf1ae9f6372374fbe3976614e8b1ce7054a16384c4f42b"
+  },
+  {
+    "path": "20261026-autoila-gcd-r1-board-capture-acceptance-r3/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/native-driver.stderr.log",
+    "raw_sha256": "a09d2d405eb1e51c354993d1ea8977ac6fc549c2cc30e7ff0578735ce616e0bf",
+    "sanitized_sha256": "a09d2d405eb1e51c354993d1ea8977ac6fc549c2cc30e7ff0578735ce616e0bf"
+  },
+  {
+    "path": "20261026-autoila-gcd-r1-board-capture-acceptance-r3/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/board-acceptance.json",
+    "raw_sha256": "5346a4e0e6af8199b58a737fb6a37273e1a27ef8dc3d9cdde968cec9566086fa",
+    "sanitized_sha256": "e0d7b1c5fab589840cad9c8b81d778a590bac2dbdb0005b88398e21cc705cca2"
+  },
+  {
+    "path": "20261026-autoila-gcd-r1-board-capture-acceptance-r3/controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/controller.json",
+    "raw_sha256": "ef86b4c03464a5d9d78d71cd75075897358d848c0a282b9ca8d9773648ce44af",
+    "sanitized_sha256": "46b32fc99ec8ed796ef58a03c08aad9c3403a7b5e47f8cd06f5a4626cad99c74"
+  },
+  {
+    "path": "stream-output/ddr-actual.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-controller/board/synthesized.out0",
+    "raw_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb",
+    "sanitized_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb"
+  },
+  {
+    "path": "stream-output/ddr-cpu-reference.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-current-control-repairs/ddr/simulation/PrintfModule.verilator.out",
+    "raw_sha256": "7419e93fb9a39f16ac38a9a00616f99580ce76d810a75527df4ffd125397714f",
+    "sanitized_sha256": "7419e93fb9a39f16ac38a9a00616f99580ce76d810a75527df4ffd125397714f"
+  },
+  {
+    "path": "stream-output/mmio-actual.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-controller/board/synthesized.out0",
+    "raw_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb",
+    "sanitized_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb"
+  },
+  {
+    "path": "stream-output/mmio-cpu-reference.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-current-control-repairs/mmio/simulation/PrintfModule.verilator.out",
+    "raw_sha256": "5b1cb0de2694a65a62a9d248a962655d7690a07a4d86624c3152d5d24490a4ae",
+    "sanitized_sha256": "5b1cb0de2694a65a62a9d248a962655d7690a07a4d86624c3152d5d24490a4ae"
+  },
+  {
+    "path": "stream-output/fpga-ddr-actual.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-controller/board/synthesized.out0",
+    "raw_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb",
+    "sanitized_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb"
+  },
+  {
+    "path": "stream-output/fpga-ddr-cpu-reference.txt",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-current-control-repairs/fpga-ddr/simulation/PrintfModule.verilator.out",
+    "raw_sha256": "77d0d07bd198adbe6f7735489766e5030e6c196e61a421d0ef497869ca3b54de",
+    "sanitized_sha256": "77d0d07bd198adbe6f7735489766e5030e6c196e61a421d0ef497869ca3b54de"
+  },
+  {
+    "path": "autocounter/actual.csv",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-controller/board/autocounter0.csv",
+    "raw_sha256": "355ca0a1c22d1e9ac6060269dd23b772a63fd7309119dd6a04afcf0defca6edf",
+    "sanitized_sha256": "355ca0a1c22d1e9ac6060269dd23b772a63fd7309119dd6a04afcf0defca6edf"
+  },
+  {
+    "path": "rocket-linux/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/native-driver.stdout.log",
+    "raw_sha256": "c83271533826d0909416062e2cda5699085dff240771c1b5cbd42b79dc1c9bfd",
+    "sanitized_sha256": "e1afd69cb676034a2fdc02902d766def851dea7e2dc16c15f227003ea39a68fc"
+  },
+  {
+    "path": "rocket-linux/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/native-driver.stderr.log",
+    "raw_sha256": "819f8f117b5fd620716b546b8f04f70bacc2db382bc90241e8116ebf04319e2b",
+    "sanitized_sha256": "819f8f117b5fd620716b546b8f04f70bacc2db382bc90241e8116ebf04319e2b"
+  },
+  {
+    "path": "rocket-linux/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-board-r2/qualification/board-acceptance.json",
+    "raw_sha256": "ec3faa51fc3f3a98765e209fb86fa542b4a922e39408fb0de680fe1563e4575c",
+    "sanitized_sha256": "ec3faa51fc3f3a98765e209fb86fa542b4a922e39408fb0de680fe1563e4575c"
+  },
+  {
+    "path": "results/20261026-rocket-linux-htif-acceptance-r3.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-linux-htif-acceptance-r3/result.json",
+    "raw_sha256": "c658bbf8455a5e021c859af6b6643703fb83f29a0410888acf985ecfc35a17a1",
+    "sanitized_sha256": "98a80d77747ec95ff4e4a048de0fd9fe00b1a3a1145abcab533e1ba42f1175b4"
+  },
+  {
+    "path": "results/20261026-rocket-guarded-board-controller-r2.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-guarded-board-controller-r2/result.json",
+    "raw_sha256": "a4075fff7447fe00ea9165a0617f8e3781e5c57f13035ef54ea11eb889eba0db",
+    "sanitized_sha256": "72bd215fb9f47adfd2d29b51a3d5cf86530eae33e2bc1b23175ac2493fbcf609"
+  },
+  {
+    "path": "results/20261026-printf-stream-ddr-r2-board-controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-controller/result.json",
+    "raw_sha256": "4eda22a9b68d5a63879e94f5e3d22abc6798b2009610c8558e82170cd5b7463f",
+    "sanitized_sha256": "f7c8e2a74c123a4e31f54632e8f90281278a4c53e6a9b143bff5439955f4fae8"
+  },
+  {
+    "path": "results/20261026-mmio-zero-ddr-board-controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-controller/result.json",
+    "raw_sha256": "c3263cae76c5ed20b027e912e92173911558cc20c3a9304863386873a0a5ed84",
+    "sanitized_sha256": "fce1d028ccf2b8181c649421a018af6f631ccec22f6e4e7a707b5658a952cbf6"
+  },
+  {
+    "path": "results/20261026-printf-stream-fpga-ddr-r2-board-controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-fpga-ddr-r2-board-controller/result.json",
+    "raw_sha256": "1e8b92245a40fb136ab708d5c58710eef56c76f1a970f316b59d730470db4db8",
+    "sanitized_sha256": "acabc87158895acb3cc217095921e170fb7eb5e61b4eb1291aa554482fb2b794"
+  },
+  {
+    "path": "results/20261026-autocounter-r1-board-controller.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-controller/result.json",
+    "raw_sha256": "e846f5bb14ad402da379cfbc863a0c7c3b4d07fe5bc6468602c7bb4c6a66bbf0",
+    "sanitized_sha256": "d8a4181614615d60055615a8c56a713613863b014d51a829e721e2825e905868"
+  },
+  {
+    "path": "results/20261026-manager-current-artifact-acceptance-r5.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-manager-current-artifact-acceptance-r5/result.json",
+    "raw_sha256": "79744dcb43934da13ba80997d6183439c6bfdee5517d094d76d9faa289909aee",
+    "sanitized_sha256": "919c54381abec6706df46fbcec6687b816ccebfe8d6fc2c24874b7a08812ded2"
+  },
+  {
+    "path": "results/20261026-autoila-board-followup-controller-r6.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-board-followup-controller-r6/result.json",
+    "raw_sha256": "98bc5250f7e1ee38d2c51280acfdac507b6303a47453f1f0ad5fe6600e5ebc03",
+    "sanitized_sha256": "97c13036da50d99236f21d1477215ef654e2719447fe1b1c0b9a7cdbb8d4a251"
+  },
+  {
+    "path": "manager/native-driver.stdout.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-manager-current-flow/remote/sim_slot_0/v80-runtime-proof-f2ca76967bcb438d9e8724e1ad63b475/native-driver.stdout.log",
+    "raw_sha256": "38152d4dcaf983736c0e64d6aa94ebd7e473a622c64935ffac5aae8b7cc8aa9f",
+    "sanitized_sha256": "eba390ad7ab58629708960e29803e74b02168c52035d921a95eb7a15e56478f8"
+  },
+  {
+    "path": "manager/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-manager-current-flow/remote/sim_slot_0/v80-runtime-proof-f2ca76967bcb438d9e8724e1ad63b475/native-driver.stderr.log",
+    "raw_sha256": "37b902a271ebccd282509a58819217fd24366c3f58fd488d545261d3f9f75f35",
+    "sanitized_sha256": "37b902a271ebccd282509a58819217fd24366c3f58fd488d545261d3f9f75f35"
+  },
+  {
+    "path": "manager/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-manager-current-flow/remote/sim_slot_0/v80-runtime-proof-f2ca76967bcb438d9e8724e1ad63b475/board-acceptance.json",
+    "raw_sha256": "ac8d2609ee90b09e8366dfc20ade08a1b6d05f9d4ad40529bf37f3fd5fdfbb32",
+    "sanitized_sha256": "ac8d2609ee90b09e8366dfc20ade08a1b6d05f9d4ad40529bf37f3fd5fdfbb32"
+  },
+  {
+    "path": "manager/collected/uartlog",
+    "source": "<V80_WORKSPACE>/upstream/firesim-manager-acceptance-20261026/deploy/results-workload/2026-10-26--05-27-51-v80-current-manager-current-source-20261026/v80-current-manager0/uartlog",
+    "raw_sha256": "5b00ec5fa25635baaee1caf5023225b7f6e88fe3a96d437fd68c0ad525dae383",
+    "sanitized_sha256": "beb4ce6324c8623ee801af5e05d6392879822c4ae18a5a748af3ad2bd654fcc8"
+  },
+  {
+    "path": "manager/collected/sim-run.sh",
+    "source": "<V80_WORKSPACE>/upstream/firesim-manager-acceptance-20261026/deploy/results-workload/2026-10-26--05-27-51-v80-current-manager-current-source-20261026/v80-current-manager0/sim-run.sh",
+    "raw_sha256": "4edb86705bbace6b78a4ecb075b4c5f3e411e04649b91cb8d8e44739bdb49599",
+    "sanitized_sha256": "4edb86705bbace6b78a4ecb075b4c5f3e411e04649b91cb8d8e44739bdb49599"
+  },
+  {
+    "path": "manager/collected/HW_CFG_SUMMARY",
+    "source": "<V80_WORKSPACE>/upstream/firesim-manager-acceptance-20261026/deploy/results-workload/2026-10-26--05-27-51-v80-current-manager-current-source-20261026/v80-current-manager0/HW_CFG_SUMMARY",
+    "raw_sha256": "cc1573d73f64f78c77a0bad2886409fc927b28912e3ca3e2a7769d8b8aa71e6e",
+    "sanitized_sha256": "54b3f49e7fbe61495efc55a87350cf2c0ab43999a25149b5be464c7d48917193"
+  },
+  {
+    "path": "autoila-capture/capture.csv",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/capture/capture.csv",
+    "raw_sha256": "e79ff78d858439901125102adf3d714b4310a7f61f0f7c40848ac759daac3a6d",
+    "sanitized_sha256": "e79ff78d858439901125102adf3d714b4310a7f61f0f7c40848ac759daac3a6d"
+  },
+  {
+    "path": "autoila-capture/capture-final.csv",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/capture/capture-final.csv",
+    "raw_sha256": "148264850493faae7baae8b7d08df615ab10134aa13c3cbdfc55b488669b9a7e",
+    "sanitized_sha256": "148264850493faae7baae8b7d08df615ab10134aa13c3cbdfc55b488669b9a7e"
+  },
+  {
+    "path": "retained-failures/20261026-printf-stream-mmio-r2-board-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-mmio-r2-board-acceptance/board-acceptance.json",
+    "raw_sha256": "825986b7de22fb3f01021b6fbc9a77595541d75a22e8481a13e2f0be4215389e",
+    "sanitized_sha256": "825986b7de22fb3f01021b6fbc9a77595541d75a22e8481a13e2f0be4215389e"
+  },
+  {
+    "path": "retained-failures/20261026-printf-stream-mmio-r2-board-acceptance/native-driver.stderr.log",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-mmio-r2-board-acceptance/native-driver.stderr.log",
+    "raw_sha256": "6f7543db99fef9339dfc8d3880dafa61def36932e06d20aa28bba858698eb330",
+    "sanitized_sha256": "6f7543db99fef9339dfc8d3880dafa61def36932e06d20aa28bba858698eb330"
+  },
+  {
+    "path": "retained-failures/20261026-autoila-gcd-r1-board-capture-acceptance/board-acceptance.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance/board-acceptance.json",
+    "raw_sha256": "4c753620fe71749e68c8d5924c07aacaa936df3a5fe8b74dc99b91fe6f34f3e2",
+    "sanitized_sha256": "4c753620fe71749e68c8d5924c07aacaa936df3a5fe8b74dc99b91fe6f34f3e2"
+  },
+  {
+    "path": "repairs/20261026-mmio-zero-ddr-runtime-validation.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-runtime-validation/result.json",
+    "raw_sha256": "13f647043b2057c4becbc090ad404a1269ab6a11bc721a47fafa8f80eb88e75f",
+    "sanitized_sha256": "13f647043b2057c4becbc090ad404a1269ab6a11bc721a47fafa8f80eb88e75f"
+  },
+  {
+    "path": "repairs/20261026-mmio-zero-ddr-parent-control-r2.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-parent-control-r2/result.json",
+    "raw_sha256": "a70da005f1a3c20012651ba3fc743cf7dfd7cc77388fbf27d7e9de7bf861caad",
+    "sanitized_sha256": "a70da005f1a3c20012651ba3fc743cf7dfd7cc77388fbf27d7e9de7bf861caad"
+  },
+  {
+    "path": "repairs/20261026-plm-ring-decoder-validation.json",
+    "source": "<V80_WORKSPACE>/upstream/runs/20261026-plm-ring-decoder-validation/result.json",
+    "raw_sha256": "ccec10d0781e66c3bea821c451983fbceaca57a57919a1ec56d71d33622566c7",
+    "sanitized_sha256": "7073f3547acb074ff3d55e43c522f2682de9355f35aaecc7a917b84f09d48886"
+  }
+]

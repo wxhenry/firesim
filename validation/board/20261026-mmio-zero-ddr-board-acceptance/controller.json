@@ -1,0 +1,9 @@
+{
+  "pid": 3240916,
+  "start_ticks": "8272148",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-mmio-zero-ddr-candidate",
+  "deployment_manifest_sha256": "1ddba191bd86692b31ddd643a346a9ef2dde9557d5ded5524541d9ed627040f9",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

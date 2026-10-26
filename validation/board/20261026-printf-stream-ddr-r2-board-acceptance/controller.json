@@ -1,0 +1,9 @@
+{
+  "pid": 3138701,
+  "start_ticks": "8008481",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-printf-stream-ddr-r2-candidate",
+  "deployment_manifest_sha256": "36f07a3860d2ea38ca1c2b3f5a5e0a9dd08089201c3af21c73bb0a4db1a54d87",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

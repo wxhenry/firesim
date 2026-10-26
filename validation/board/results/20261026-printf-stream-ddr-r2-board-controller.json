@@ -1,0 +1,28 @@
+{
+  "exit_code": 0,
+  "source_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "transport": "ddr",
+  "public_upload": false,
+  "total_timeout_seconds": 1450,
+  "stages": [
+    {
+      "name": "export-candidate",
+      "exit_code": 0
+    },
+    {
+      "name": "board",
+      "exit_code": 0
+    }
+  ],
+  "candidate_manifest_sha256": "36f07a3860d2ea38ca1c2b3f5a5e0a9dd08089201c3af21c73bb0a4db1a54d87",
+  "expected_lines": 64004,
+  "actual_lines": 64004,
+  "missing_lines": 0,
+  "extra_lines": 0,
+  "expected_output_sha256": "7419e93fb9a39f16ac38a9a00616f99580ce76d810a75527df4ffd125397714f",
+  "actual_output_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb",
+  "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-printf-stream-ddr-r2-board-acceptance/board-acceptance.json",
+  "full_stream_output_match": true,
+  "scope": "Exact Printf output stream on this transport/image; not bidirectional guest networking",
+  "elapsed_seconds": 89.26324829099758
+}

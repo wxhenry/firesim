@@ -1,0 +1,262 @@
+{
+  "state": "failed",
+  "hardware_tested": true,
+  "functional_pass": false,
+  "exit_code": 1,
+  "deployment_manifest_sha256": "6f33f003358cf497c71be6a70721f9ee31630037ba32e380fd8b17cbfee4463b",
+  "checks": {
+    "runtime_libraries": true,
+    "guard_before": true,
+    "pcie_before": true,
+    "health_before": true,
+    "device_before": true,
+    "program": true,
+    "device_programmed": true,
+    "pcie_programmed": true,
+    "clock_readback": true,
+    "clock_measure": true,
+    "pcie_native": true
+  },
+  "logs": [
+    {
+      "path": "clock-measure-command.json",
+      "sha256": "8ac85c15587a747eb0589056341e0843c53c30fa257f6530cf0d85cc003e8c41"
+    },
+    {
+      "path": "clock-measure.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clock-measure.stdout.log",
+      "sha256": "ebf3223e5e904049c7b6c15907a18c6340089865b4b01175e9371cdfb0e07a34"
+    },
+    {
+      "path": "clock-read-command.json",
+      "sha256": "3580e7634627f95b201b7336fc17af7f1f4002d30c02224e5a4b4bcf105ec033"
+    },
+    {
+      "path": "clock-read.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clock-read.stdout.log",
+      "sha256": "e3111b080bd1ea1ce3f46dbdd75a784191e6be96aa5b8cb46706d3773a81627d"
+    },
+    {
+      "path": "clock-set-command.json",
+      "sha256": "a1203146a72557bb36cc602d56cac7dab20a8378a0953bf198cbbc2bfb36468e"
+    },
+    {
+      "path": "clock-set.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "clock-set.stdout.log",
+      "sha256": "dc3b4d5a13bfa9784788175e2dc47c591c36b7658d78a70410acd0a907cfff35"
+    },
+    {
+      "path": "controller.json",
+      "sha256": "8899c8673e5a3ecbdfc0b35fdee1483cfef4cb6796589b2f636e4b8a6e3bacca"
+    },
+    {
+      "path": "deployment-used.json",
+      "sha256": "6f33f003358cf497c71be6a70721f9ee31630037ba32e380fd8b17cbfee4463b"
+    },
+    {
+      "path": "device-before-audit.json",
+      "sha256": "0f153c0550997fff3146b033d9cea4bb4086c1214fcc01e9fcbff8355c2d4961"
+    },
+    {
+      "path": "device-before-plm-command.json",
+      "sha256": "73216a7f473c697cd44f66a58166a95457a0d889211e62dd88429650c573474b"
+    },
+    {
+      "path": "device-before-plm.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-before-plm.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-before-registers-command.json",
+      "sha256": "d65000c55f27eac4332d75fb6890822a8a916f36b61d7775b537948d0bb2c0c8"
+    },
+    {
+      "path": "device-before-registers.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-before-registers.stdout.log",
+      "sha256": "ea519d26ae5f53476ae8830d5455772a8fb221a70812bae6333d74df8cf0e6e1"
+    },
+    {
+      "path": "device-before-registers.txt",
+      "sha256": "53f80e9f5796c5b0e53c5861c88fa9f491826ac1817db5769df5d1364bca0e4f"
+    },
+    {
+      "path": "device-before-slr0.bin",
+      "sha256": "3e58aa305811669ac37009399ca73d9f76f86d21dc836852e0016e687800b186"
+    },
+    {
+      "path": "device-before-slr1.bin",
+      "sha256": "567fc101e6245f9a97b2e028d4f329ab4a740af0288a83a836ab4fd261186c08"
+    },
+    {
+      "path": "device-before-slr2.bin",
+      "sha256": "71eaaddf8d38543ff0605b376619bf377c105fafbe7ebf48a030442590089b93"
+    },
+    {
+      "path": "device-programmed-audit.json",
+      "sha256": "4c0428f9952d329234ef1509f4c21858b3f6623be0d10174412b069f90dbb82d"
+    },
+    {
+      "path": "device-programmed-plm-command.json",
+      "sha256": "73216a7f473c697cd44f66a58166a95457a0d889211e62dd88429650c573474b"
+    },
+    {
+      "path": "device-programmed-plm.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-programmed-plm.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-programmed-registers-command.json",
+      "sha256": "816dfb9e55da4539448479c3d37e9e3f48760841f480849975abd3d67a96a56b"
+    },
+    {
+      "path": "device-programmed-registers.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "device-programmed-registers.stdout.log",
+      "sha256": "b2b8055c49d449bced11a144cfcab4ca42c4656c55c865ebfbe04e8bb0df4a5c"
+    },
+    {
+      "path": "device-programmed-registers.txt",
+      "sha256": "53f80e9f5796c5b0e53c5861c88fa9f491826ac1817db5769df5d1364bca0e4f"
+    },
+    {
+      "path": "device-programmed-slr0.bin",
+      "sha256": "3a94556885a3a5b0588f02fe5aeab769ac6e6a1c21c04ce2caad02fe8c140770"
+    },
+    {
+      "path": "device-programmed-slr1.bin",
+      "sha256": "da1b85b4b40028003b024680a41eddf1344abf472aa66e5704d1403c289ae2be"
+    },
+    {
+      "path": "device-programmed-slr2.bin",
+      "sha256": "90b00b7b4ecc9de615bc5bcb18dfecc9a95c6e8b4d1f2b87bc1316579ad1b2c5"
+    },
+    {
+      "path": "guard-before-command.json",
+      "sha256": "ae4f109e5f32fa9577c346d6144ad3b4b77d453a04bb645b4d00089b24ddcc93"
+    },
+    {
+      "path": "guard-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "guard-before.stdout.log",
+      "sha256": "dfd9ff8db9a11122d72c41774714a44b0f39a8dd4c39b7b31174cb08b6addb37"
+    },
+    {
+      "path": "health-before-command.json",
+      "sha256": "14a96aa7a716822565d134034b066ad9bdef09c64b60c0496b2712cdb1cac710"
+    },
+    {
+      "path": "health-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "health-before.stdout.log",
+      "sha256": "a44c337e04ca966e0b2a0160aba3b00475163fa3b8f59d2dffec458a6f399539"
+    },
+    {
+      "path": "jtag-server.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-driver-command.json",
+      "sha256": "f113cc7bae2146e98cabe84502ebcd0cd0168479c13e618ba5945f9f08e0163b"
+    },
+    {
+      "path": "native-driver.stderr.log",
+      "sha256": "6f7543db99fef9339dfc8d3880dafa61def36932e06d20aa28bba858698eb330"
+    },
+    {
+      "path": "native-driver.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pcie-before.json",
+      "sha256": "bdaa2f40c113cee272295c2b4e4a316d826cc30ef568ffe3245b20e85248060b"
+    },
+    {
+      "path": "pcie-final.json",
+      "sha256": "bdaa2f40c113cee272295c2b4e4a316d826cc30ef568ffe3245b20e85248060b"
+    },
+    {
+      "path": "pcie-native.json",
+      "sha256": "bdaa2f40c113cee272295c2b4e4a316d826cc30ef568ffe3245b20e85248060b"
+    },
+    {
+      "path": "pcie-programmed.json",
+      "sha256": "bdaa2f40c113cee272295c2b4e4a316d826cc30ef568ffe3245b20e85248060b"
+    },
+    {
+      "path": "program-command.json",
+      "sha256": "18e986a0021539df811356abfc23ff3622620a6769000c80f74194a283900a76"
+    },
+    {
+      "path": "program.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "program.stdout.log",
+      "sha256": "1d7de83ab6be5d53e075a96adb75f77a4764855a0897a039e524cfba5038b718"
+    },
+    {
+      "path": "runtime-libraries-command.json",
+      "sha256": "4c4fb779d2e0c4aa479b5ebdfc2e7f97ced011a1b49a46609e75dc00bc6b480e"
+    },
+    {
+      "path": "runtime-libraries.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime-libraries.stdout.log",
+      "sha256": "5eee352ac322b52d252aef1169939048599918bb12be79b8107ca416f84cb1a0"
+    }
+  ],
+  "bdf": "0000:ab:00",
+  "timeout_seconds": 1200,
+  "stage": "native-driver",
+  "runtime_libraries": {
+    "libvrt.so.1": "8cc50ef23bbfdfbdc9a46bf04a327b6580f4321be6477bffab0ddc899a44c26c",
+    "libstdc++.so.6": "37488010a4e02ec415b18b726def5015670a521a7bc0c62bc21f9b822036622e",
+    "libgmp.so.10": "42d12c2b0a0178e4e452a1d21fc130d8dc521ec0c364c1025357e8e8902f2f8c",
+    "libgcc_s.so.1": "fabfc0f92e72f4583ab0d87fa6de008281bb5b913f8f6e20206f00b594e0f98f",
+    "libc.so.6": "3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf",
+    "libvrtdpp.so.1": "3c1be2de24d459984348f850c8e814681962d429b609ba0f5bda090e29e4e817",
+    "libz.so.1": "9a1046cd4a615a1295b4b7612eefc201c31d7d13669a1859c688b5ae642693ef",
+    "libxml2.so.2": "41e7eb31d654001a5623d42b25963653e3136a3f8fa9c12e0f2ce846ea172be6",
+    "libjsoncpp.so.27": "1acd3e874b0d0830927842c78c62260a3240ea715ac39fe55a1f0ba219fc22cf",
+    "libzmq.so.5": "a4baaad0a4a7d9006445de7ae1166cd2e7352d7df529e09863700d09fe5290b1",
+    "libm.so.6": "fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0",
+    "libdl.so.2": "c2994527172cc23b7fb0f7d611b71e00a37da27af12c2e5e9e0dc1a742886c96",
+    "librt.so.1": "6d072187d88e092e81561a44c03a4a41397319022c6d43519757cc051c576d82",
+    "libvrtd.so.1": "ba7f92349551c52b855900ec668a8c12e4aec6415855d22d87b875e8fa7f3782",
+    "libiconv.so.2": "40d7a5302ea6b50f6cfbbe3a3b1e46f12483ef6e6a12b8a8c17f563230e17b07",
+    "liblzma.so.5": "84d8a0f3f6af2f1ededfc0c2df9176098ab7b62f17ce7f5805502b411626072b",
+    "libicui18n.so.73": "a1494325f664d8c8cdc1fe48ad5fc74f235b74f743b87bfafe5a5e60bcbec9bb",
+    "libicuuc.so.73": "f4afab034e7b8114d96a24ad50b9cc7ac6348f3f01d1b29baa8fafa29a0eba91",
+    "libicudata.so.73": "87842d229db2aa73300af577458a7e070f9f6d0680ea05fd0f5b66e3ceafd257",
+    "libsodium.so.23": "037e1d5f80691fb77868a74000db95d3bbdbe8b4557c24f8eb4e91e0e919d268",
+    "libpthread.so.0": "90491a21ce44efcf3bd4b65ec82501c091d7ebe7f8d9b341dd01d721001d9ecd"
+  },
+  "error": "native-driver failed with exit 1",
+  "elapsed_seconds": 63.38871559500694
+}

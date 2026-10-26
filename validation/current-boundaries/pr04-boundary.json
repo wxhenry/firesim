@@ -1,0 +1,17 @@
+{
+  "public_upload": false,
+  "base": "8240c34016481e99001ffcef29d1b95822287a13",
+  "candidate_commit": "775352329d91adc4125201c3d617af9103f17feb",
+  "exact_final_files": {
+    "deploy/bit-builder-recipes/xilinx_alveo_v80_slash.yaml": "e9e057dbfe7dd016db7353ef3a94a3197532fe4d13b920675483b72da38b93c3",
+    "deploy/buildtools/bitbuilder.py": "f3845afd312a19f19711784f7c673c6a41a0e0dc835ad5bbe237858185a104ce",
+    "deploy/run-farm-recipes/xilinx_alveo_v80_slash.yaml": "160fdb20570b17f63aa53e261d31eef315e3ee22e413efb61a057f21eb520298",
+    "deploy/runtools/run_farm_deploy_managers.py": "f2cf723a24bad5f0ec271772f78dab5239538e75e2122044f7b3bd05503cd4c3",
+    "platforms/xilinx_alveo_v80_slash/tests/test_manager.py": "8f81811ca9a857e4f21dee95cd7973ae526b114de3ca606b541a5986324152a3"
+  },
+  "validation": {
+    "result": "runs/20261026-pr04-boundary-validation-r3/result.json",
+    "cases": 10
+  },
+  "state": "local-boundary-validated"
+}

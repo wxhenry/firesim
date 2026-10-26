@@ -1,0 +1,14 @@
+{
+  "exit_code": 1,
+  "hardware_access": false,
+  "public_upload": false,
+  "total_timeout_seconds": 1400,
+  "stages": [
+    {
+      "name": "driver",
+      "exit_code": 0
+    }
+  ],
+  "commit": "a07abd7a042ec6ead342db60ab0fe00f65514663",
+  "state": "runtime"
+}

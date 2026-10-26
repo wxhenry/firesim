@@ -1,0 +1,32 @@
+{
+  "exit_code": 0,
+  "source_commit": "93c273f04e25e0b9a6917b191088ddfaed08333d",
+  "transport": "mmio",
+  "public_upload": false,
+  "total_timeout_seconds": 1450,
+  "stages": [
+    {
+      "name": "export-candidate",
+      "exit_code": 0
+    },
+    {
+      "name": "board",
+      "exit_code": 0
+    }
+  ],
+  "native_build_result_sha256": "fe9e836e5be13cea0dc874033bc852f8e32e5327157dd25826b2e1bdca181b48",
+  "parent_comparison_result_sha256": "a70da005f1a3c20012651ba3fc743cf7dfd7cc77388fbf27d7e9de7bf861caad",
+  "qualified_hardware_source": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "hardware_unchanged": true,
+  "candidate_manifest_sha256": "1ddba191bd86692b31ddd643a346a9ef2dde9557d5ded5524541d9ed627040f9",
+  "expected_lines": 64004,
+  "actual_lines": 64004,
+  "missing_lines": 0,
+  "extra_lines": 0,
+  "expected_output_sha256": "5b1cb0de2694a65a62a9d248a962655d7690a07a4d86624c3152d5d24490a4ae",
+  "actual_output_sha256": "bf1c020e94692d2c42774fe2a20e2ce1f033194930d7e4591b8565178f071bdb",
+  "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-mmio-zero-ddr-board-acceptance/board-acceptance.json",
+  "full_stream_output_match": true,
+  "scope": "Exact Printf output stream on this transport/image; not bidirectional guest networking",
+  "elapsed_seconds": 89.63709842800745
+}

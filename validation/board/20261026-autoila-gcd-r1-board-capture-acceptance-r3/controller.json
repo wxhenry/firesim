@@ -1,0 +1,9 @@
+{
+  "pid": 3322711,
+  "start_ticks": "8432709",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-autoila-gcd-r1-candidate",
+  "deployment_manifest_sha256": "79fe6ac1a93bac1f1c631c49fecc1817a369b7a78cddbfe362daaeafc63f78c1",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

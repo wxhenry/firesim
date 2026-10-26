@@ -1,0 +1,59 @@
+{
+  "suites": {
+    "fased": {
+      "build_exit_code": 0,
+      "cases": {
+        "histogram-lifetime": 0,
+        "range-lifetime": 0,
+        "model-index": 0,
+        "output-isolation": 0,
+        "defaults": 0,
+        "unsigned32": 0,
+        "hex32": 0,
+        "decimal": 0,
+        "negative": 0,
+        "overflow": 0,
+        "trailing-garbage": 0,
+        "empty": 0
+      }
+    },
+    "simulation": {
+      "build_exit_code": 0,
+      "cases": {
+        "success": 0,
+        "late-failure": 0,
+        "early-failure": 0,
+        "multiple-failures": 0,
+        "success-before-failure": 0,
+        "nonterminating": 0,
+        "timeout": 0,
+        "init-pending": 0,
+        "init-invalid": 0,
+        "init-unavailable": 0,
+        "init-wait-timeout": 0,
+        "init-wait-ready": 0,
+        "init-wait-invalid": 0,
+        "init-timeout-zero": 0,
+        "init-timeout-negative": 0,
+        "init-timeout-overflow": 0,
+        "init-timeout-upper": 0,
+        "init-timeout-empty": 0,
+        "init-timeout-trailing": 0,
+        "init-timeout-plus": 0,
+        "init-timeout-space": 0,
+        "init-timeout-duplicate": 0,
+        "init-timeout-min": 0,
+        "init-timeout-max": 0
+      }
+    },
+    "scheduler": {
+      "build_exit_code": 0,
+      "cases": {
+        "profile-lifetime": 0,
+        "no-profile": 0
+      }
+    }
+  },
+  "hardware_access": false,
+  "elapsed_seconds": 43.14714392898895
+}

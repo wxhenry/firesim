@@ -1,0 +1,9 @@
+{
+  "pid": 2886737,
+  "start_ticks": "7674609",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-rocket-guarded-candidate",
+  "deployment_manifest_sha256": "51f860e4208f74f2a4153a05aa5ae9f7d6f4ad5b55b33de83ac1176d2edcc766",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

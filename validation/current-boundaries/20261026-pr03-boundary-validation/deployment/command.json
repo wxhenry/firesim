@@ -1,0 +1,5 @@
+[
+  "python3",
+  "-B",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/platforms/xilinx_alveo_v80_slash/tests/test_deployment.py"
+]

@@ -1,0 +1,38 @@
+{
+  "baseline_commit": "234175e00711f5c0c9b9e5df1b9c8c71bf7f101d",
+  "fix_commit": "001b2302577ea0c190d3b8bd5f15698ccf6ad765",
+  "baseline_test_count": 2,
+  "baseline_failures": 1,
+  "fixed_test_count": 18,
+  "fixed_failures": 0,
+  "identical_regression_source": true,
+  "source_fingerprints_rechecked": true,
+  "original_fixed_status": "?? sim/AbstractClockGate.v\n",
+  "generated_file_note": "Only untracked file was an AbstractClockGate.v emitted by the baseline elaboration. Preserved under baseline-final evidence directory; no tracked source changes.",
+  "generated_outputs": [
+    {
+      "run": "20261024-host-lowering-baseline-final",
+      "path": "<FIRESIM>/sim/test_run_dir/GoldenGateCompilerPhaseSpec/control-14701310794841318438/HostLowering.sv",
+      "sha256": "f17cc0ca15774924a514f3ff2c1707823224f97b49ebbebf72c5b568c36317df",
+      "bytes": 615868
+    },
+    {
+      "run": "20261024-host-lowering-baseline-final",
+      "path": "<FIRESIM>/sim/test_run_dir/GoldenGateCompilerPhaseSpec/host-transform-11586795670408012915/HostLowering.sv",
+      "sha256": "dbf9277c5ad8ec23e9a962f27921a8eaa99c60a68b5e2d0c5e297cbff671a254",
+      "bytes": 615868
+    },
+    {
+      "run": "20261024-host-lowering-fixed-final",
+      "path": "<FIRESIM>/sim/test_run_dir/GoldenGateCompilerPhaseSpec/control-7880042816563546164/HostLowering.sv",
+      "sha256": "f17cc0ca15774924a514f3ff2c1707823224f97b49ebbebf72c5b568c36317df",
+      "bytes": 615868
+    },
+    {
+      "run": "20261024-host-lowering-fixed-final",
+      "path": "<FIRESIM>/sim/test_run_dir/GoldenGateCompilerPhaseSpec/host-transform-12582152506527515683/HostLowering.sv",
+      "sha256": "dbf9277c5ad8ec23e9a962f27921a8eaa99c60a68b5e2d0c5e297cbff671a254",
+      "bytes": 615868
+    }
+  ]
+}

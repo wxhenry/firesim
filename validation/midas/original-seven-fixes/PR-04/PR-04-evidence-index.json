@@ -1,0 +1,2617 @@
+{
+  "runs": {
+    "baseline": {
+      "commit": "7145c2f6329bb601ab1db19a7f8f139ccd133a0f",
+      "status": "?? sim/AbstractClockGate.v\n?? sim/midas/src/test/scala/midas/stage/FASEDHeaderSpec.scala\n",
+      "result": {
+        "exit_code": 1,
+        "elapsed_seconds": 30.8119111279957,
+        "hardware_access": false
+      },
+      "source_manifest": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/manifest.json",
+      "cases": [
+        {
+          "name": "control",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "host-cycle",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679",
+          "cpp_compile_pass": false,
+          "error_preview": [
+            "In file included from /usr/include/unistd.h:226,",
+            "                 from /usr/include/c++/13/bits/atomic_wait.h:45,",
+            "                 from /usr/include/c++/13/bits/atomic_base.h:42,",
+            "                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,",
+            "                 from /usr/include/c++/13/memory:81,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,"
+          ]
+        },
+        {
+          "name": "stalls",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046",
+          "cpp_compile_pass": false,
+          "error_preview": [
+            "In file included from /usr/include/unistd.h:226,",
+            "                 from /usr/include/c++/13/bits/atomic_wait.h:45,",
+            "                 from /usr/include/c++/13/bits/atomic_base.h:42,",
+            "                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,",
+            "                 from /usr/include/c++/13/memory:81,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,"
+          ]
+        },
+        {
+          "name": "ranges",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297",
+          "cpp_compile_pass": false,
+          "error_preview": [
+            "In file included from /usr/include/unistd.h:226,",
+            "                 from /usr/include/c++/13/bits/atomic_wait.h:45,",
+            "                 from /usr/include/c++/13/bits/atomic_base.h:42,",
+            "                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,",
+            "                 from /usr/include/c++/13/memory:81,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,"
+          ]
+        },
+        {
+          "name": "collisions",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634",
+          "cpp_compile_pass": false,
+          "error_preview": [
+            "In file included from /usr/include/unistd.h:226,",
+            "                 from /usr/include/c++/13/bits/atomic_wait.h:45,",
+            "                 from /usr/include/c++/13/bits/atomic_base.h:42,",
+            "                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,",
+            "                 from /usr/include/c++/13/memory:81,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,"
+          ]
+        },
+        {
+          "name": "all-profiling",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068",
+          "cpp_compile_pass": false,
+          "error_preview": [
+            "In file included from /usr/include/unistd.h:226,",
+            "                 from /usr/include/c++/13/bits/atomic_wait.h:45,",
+            "                 from /usr/include/c++/13/bits/atomic_base.h:42,",
+            "                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,",
+            "                 from /usr/include/c++/13/memory:81,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,",
+            "                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,"
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/FASEDHeader.const.h",
+          "sha256": "ab2bd6b616bfceebfc06b232357653b678b2018ca97840bec367d1c3241ca881"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/FASEDHeader.sv",
+          "sha256": "a2efa42ad22e2a495a01b230defa781286054a3b5cfdb900d6f7a9bf16d500c7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/command.txt",
+          "sha256": "a5660a92809f4a27b85b6e0299b2ba0438517b7ebc78c1a53be2fda44a6e0836"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-extract-model-all.json",
+          "sha256": "922021821dab53c00631b2e490a57113c67304ff7df8d3c2fe607f45f65b5937"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-partition-all.json",
+          "sha256": "8ac13ac3077b329592ae0a18bbb419375a5d9e254c81dc81ed106a8554cb5b18"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-sim-mapping.fir",
+          "sha256": "2e64f37b978cbea169cb17776a2243f5aad63af2bb599bc049040bab01071bd6"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-wrap-top-all.json",
+          "sha256": "922021821dab53c00631b2e490a57113c67304ff7df8d3c2fe607f45f65b5937"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-extract-model-all.json",
+          "sha256": "922021821dab53c00631b2e490a57113c67304ff7df8d3c2fe607f45f65b5937"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-partition-all.json",
+          "sha256": "8ac13ac3077b329592ae0a18bbb419375a5d9e254c81dc81ed106a8554cb5b18"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-16278844253766610942/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/FASEDHeader.const.h",
+          "sha256": "9675b05652ca733a27cb27a8bfa2ac0b044d68811b9987d874cb6371fef35380"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/FASEDHeader.sv",
+          "sha256": "d91a48366925a34fcfd6313f29780c992b854f940b5a77620d9f91543a4ce0b2"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/command.txt",
+          "sha256": "5f561f583e48e342e73ff6cd3e60fbf611d41191115eee173674e349a3c81090"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/compile.stderr",
+          "sha256": "4e414f447ee35df727d240d7f0211fc16f4e5297f2301fa1655524ce41e5e712"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-extract-model-all.json",
+          "sha256": "da8d8403906f21b16bf50e9829edb209c2233bc22b65d2ffa74bc51875a36254"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-partition-all.json",
+          "sha256": "65451c33de2586ebb659ab697be3064dfca896d21063a74f9c28117728b566e1"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-sim-mapping.fir",
+          "sha256": "28f99c8ffbd8cf87b3f4386ace4dd887c4e84e2fc3c3ceca88e0758d2359a2e0"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-wrap-top-all.json",
+          "sha256": "da8d8403906f21b16bf50e9829edb209c2233bc22b65d2ffa74bc51875a36254"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-extract-model-all.json",
+          "sha256": "da8d8403906f21b16bf50e9829edb209c2233bc22b65d2ffa74bc51875a36254"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-partition-all.json",
+          "sha256": "65451c33de2586ebb659ab697be3064dfca896d21063a74f9c28117728b566e1"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-6307199051763502679/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h",
+          "sha256": "961accec1164c7ae5cf9db9533fbfb490e48661b3e7eb750055536ba9348623d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.sv",
+          "sha256": "0c6e9d0fe592b5f4a63f3ae047c4508789a2d08ed0c044a33bcdb161b6d9e14b"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/command.txt",
+          "sha256": "5ea0ae1f3bc6abfbccfc32ae07fffb0252d582df90fe00b7be76e64ee59f70a9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/compile.stderr",
+          "sha256": "ff72e35a35916c4bd71279f0bb516009fc6c13b46d42111624adb13f2f4a8ba9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-extract-model-all.json",
+          "sha256": "03ae1a0fa0dfc3430ad37e404b98df7fbae39adb892473dbf0e24ffa1011f75e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-partition-all.json",
+          "sha256": "fd254cc221bb689e93eedb22cfb2e03fdb3f0b53604760e916aa6db0a8b3c972"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-sim-mapping.fir",
+          "sha256": "d5555c7cdf399695e57b1d63739b58344a4e77a222347d12b670aeb0e5eed469"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-wrap-top-all.json",
+          "sha256": "03ae1a0fa0dfc3430ad37e404b98df7fbae39adb892473dbf0e24ffa1011f75e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-extract-model-all.json",
+          "sha256": "03ae1a0fa0dfc3430ad37e404b98df7fbae39adb892473dbf0e24ffa1011f75e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-partition-all.json",
+          "sha256": "fd254cc221bb689e93eedb22cfb2e03fdb3f0b53604760e916aa6db0a8b3c972"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/FASEDHeader.const.h",
+          "sha256": "ea1d8b9b397585dd04303f47fed99f950fba40be23aa1e0dde771d6ad4ea55c4"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/FASEDHeader.sv",
+          "sha256": "aa332afeee050f22700399a3416d57970640514d199dbc99af6d6aa70b373341"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/command.txt",
+          "sha256": "3d3daa0b33843c2d178e186d5f44895fa845073feac51733d2662931a0a01a67"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/compile.stderr",
+          "sha256": "10b5c7bc4c73fed444c9bce8dfc97ca2f729bd62f585be4ee4da31adf03b6093"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-extract-model-all.json",
+          "sha256": "68207107b67617f7e7f12eb89ac4d3f0b9253d0a5f5979d621048e8e81c5d6af"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-partition-all.json",
+          "sha256": "5a85a9512c5c7f5cd71097236a9365adb93937ff62fbe1765e700f7358b33929"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-sim-mapping.fir",
+          "sha256": "da0787908536bd38ff614c9be7f0054eff2f99a49186e7996aad33e278a4fdc5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-wrap-top-all.json",
+          "sha256": "68207107b67617f7e7f12eb89ac4d3f0b9253d0a5f5979d621048e8e81c5d6af"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-extract-model-all.json",
+          "sha256": "68207107b67617f7e7f12eb89ac4d3f0b9253d0a5f5979d621048e8e81c5d6af"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-partition-all.json",
+          "sha256": "5a85a9512c5c7f5cd71097236a9365adb93937ff62fbe1765e700f7358b33929"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-13168673056473206297/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h",
+          "sha256": "50a2fac42857377482df81bb3ad1a7025f0b614b3cb7e7076eb4d5b1c927234e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.sv",
+          "sha256": "2abe5f7dba62dc819c63c829c4e63ca33e18c481535a56b76860366d168fc546"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/command.txt",
+          "sha256": "91250267bbedbba5f1b1b7d745c1cffc697782da8ffa7c7eb256c631909fd91c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/compile.stderr",
+          "sha256": "1e5f2b94184af94c484a15e9d346bf15c9fdb578576ce53f4dd24ab02e6c5a15"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-extract-model-all.json",
+          "sha256": "2595f431bfd49a743bda934b3ee2a8a3fd4a71fd3b18b2e651ad48e4ca92bb78"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-partition-all.json",
+          "sha256": "0d04048c11aba40aa06b0f20fd3f94c64b70dd2889e9b20adc73bcb6dc701fb0"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-sim-mapping.fir",
+          "sha256": "b2eb36252559df87095d0aa921a0292f367172a092d6b7b2d0e3adfcd4926ff9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-wrap-top-all.json",
+          "sha256": "2595f431bfd49a743bda934b3ee2a8a3fd4a71fd3b18b2e651ad48e4ca92bb78"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-extract-model-all.json",
+          "sha256": "2595f431bfd49a743bda934b3ee2a8a3fd4a71fd3b18b2e651ad48e4ca92bb78"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-partition-all.json",
+          "sha256": "0d04048c11aba40aa06b0f20fd3f94c64b70dd2889e9b20adc73bcb6dc701fb0"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/FASEDHeader.const.h",
+          "sha256": "87c72d1ba76b13c97617d1bdfd0e50407c3c56481b8a2c6c392feeb4ee98693c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/FASEDHeader.sv",
+          "sha256": "f87ddeeec4a8b5e7f039768ece6a3adc21051fe112e372fce66bfb2cfa36f2c6"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/command.txt",
+          "sha256": "54d7fd517256c0c237263d032d158d7fbf10b0750eff229165e41cfdf5d8554f"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/compile.stderr",
+          "sha256": "ae6ceac402a8694fce46a800b020f7f5946270cff0981c635e54ff717481ead7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-extract-model-all.json",
+          "sha256": "2a2af057d3bb595dee6b0440b308e4f190a0db676b9475a30d736585faf67c6d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-partition-all.json",
+          "sha256": "59773bd1ab2134a25d0042111dadab6957820a9907356a3cad02b7ed0f07ba26"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-sim-mapping.fir",
+          "sha256": "dc014729c24bf5470bed49d5b411d9913e7381f44cfb8c697e6a5c32da0e9bbe"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-wrap-top-all.json",
+          "sha256": "2a2af057d3bb595dee6b0440b308e4f190a0db676b9475a30d736585faf67c6d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-extract-model-all.json",
+          "sha256": "2a2af057d3bb595dee6b0440b308e4f190a0db676b9475a30d736585faf67c6d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-partition-all.json",
+          "sha256": "59773bd1ab2134a25d0042111dadab6957820a9907356a3cad02b7ed0f07ba26"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-13961838598410842068/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/AbstractClockGate.v",
+          "sha256": "4b0aadbcd127cc4ceb682c1b439a69fbdaf7f095791021b17b3437b2cde6af48"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/manifest.json",
+          "sha256": "6835dd5399ed075982137f784b529fe1792898d14e1fda274877f0e0eca8fdb8"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/result.json",
+          "sha256": "a981e939c57caec7938e16519666a2cb81d56ce336a7ff386301453c8e51b58f"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-baseline-final/stdout.log",
+          "sha256": "3fabc872a032172b4b573f9a482d275a8e2be23bfd8101b6570e32913d4399bb"
+        }
+      ]
+    },
+    "fixed": {
+      "commit": "bbc1083f4a8aede1ad575df4ea7e6af66bf9f939",
+      "status": "",
+      "result": {
+        "exit_code": 0,
+        "elapsed_seconds": 34.9187561160652,
+        "hardware_access": false
+      },
+      "source_manifest": "<UPSTREAM_WORK>/runs/20261024-fased-header-fixed-final/manifest.json",
+      "cases": [
+        {
+          "name": "control",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "host-cycle",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "stalls",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "ranges",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "collisions",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        },
+        {
+          "name": "all-profiling",
+          "output": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162",
+          "cpp_compile_pass": true,
+          "error_preview": []
+        }
+      ],
+      "files": [
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/FASEDHeader.const.h",
+          "sha256": "ab2bd6b616bfceebfc06b232357653b678b2018ca97840bec367d1c3241ca881"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/FASEDHeader.sv",
+          "sha256": "a2efa42ad22e2a495a01b230defa781286054a3b5cfdb900d6f7a9bf16d500c7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/command.txt",
+          "sha256": "3292a02005099be22ec50a888ada72750700f1dd3e70465f81c14a731de93ef2"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-extract-model-all.json",
+          "sha256": "3c1135b7f4756273b4dee4e7ce40599f8db4ea67e9fe86e20bbe3f94cb547d99"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-partition-all.json",
+          "sha256": "7b9d9f7dbf16f3aecc1ab7d99ec99d99dd789dd15fbffdc528c35814b1d86243"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-sim-mapping.fir",
+          "sha256": "2e64f37b978cbea169cb17776a2243f5aad63af2bb599bc049040bab01071bd6"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-wrap-top-all.json",
+          "sha256": "3c1135b7f4756273b4dee4e7ce40599f8db4ea67e9fe86e20bbe3f94cb547d99"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-extract-model-all.json",
+          "sha256": "3c1135b7f4756273b4dee4e7ce40599f8db4ea67e9fe86e20bbe3f94cb547d99"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-partition-all.json",
+          "sha256": "7b9d9f7dbf16f3aecc1ab7d99ec99d99dd789dd15fbffdc528c35814b1d86243"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/control-4245344802977781272/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/FASEDHeader.const.h",
+          "sha256": "1f48b75551201d8761b4e4df84bca01fdb4554ed4159e337e0d969ee09b2862a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/FASEDHeader.sv",
+          "sha256": "d91a48366925a34fcfd6313f29780c992b854f940b5a77620d9f91543a4ce0b2"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/command.txt",
+          "sha256": "18e1252d2126eaa7cc2564249b24eae69e8894bff2e10307dce25eadd15498fb"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-extract-model-all.json",
+          "sha256": "eed3959c59b4a9ab8d27f7506041defaf8f73c88918a380dde94c52098e6e021"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-partition-all.json",
+          "sha256": "3e9c9de85176b69a9c3d3580c04097fbe299c0be30bdfc1b5029d592b9a5af78"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-sim-mapping.fir",
+          "sha256": "28f99c8ffbd8cf87b3f4386ace4dd887c4e84e2fc3c3ceca88e0758d2359a2e0"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-wrap-top-all.json",
+          "sha256": "eed3959c59b4a9ab8d27f7506041defaf8f73c88918a380dde94c52098e6e021"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-extract-model-all.json",
+          "sha256": "eed3959c59b4a9ab8d27f7506041defaf8f73c88918a380dde94c52098e6e021"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-partition-all.json",
+          "sha256": "3e9c9de85176b69a9c3d3580c04097fbe299c0be30bdfc1b5029d592b9a5af78"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/host-cycle-16610047642404670387/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/FASEDHeader.const.h",
+          "sha256": "926b42f1672a2202fdc11ea0fd91dd5a3aa15efa3a2f2439e15e0140e2188ab3"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/FASEDHeader.sv",
+          "sha256": "0c6e9d0fe592b5f4a63f3ae047c4508789a2d08ed0c044a33bcdb161b6d9e14b"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/command.txt",
+          "sha256": "280eccbbe4ab33dd6cc5040fd5c66476c9996ae73422d9fc631aa38597cb8a90"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-extract-model-all.json",
+          "sha256": "dfd50d0247f42bbbe23fc1cf691d12f5e82704cf894f9eac6354db198a09f28e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-partition-all.json",
+          "sha256": "fa8710f33c07502805fa9bba2684afb9b8594c640a1bfca1924e4a99a3031da5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-sim-mapping.fir",
+          "sha256": "d5555c7cdf399695e57b1d63739b58344a4e77a222347d12b670aeb0e5eed469"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-wrap-top-all.json",
+          "sha256": "dfd50d0247f42bbbe23fc1cf691d12f5e82704cf894f9eac6354db198a09f28e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-extract-model-all.json",
+          "sha256": "dfd50d0247f42bbbe23fc1cf691d12f5e82704cf894f9eac6354db198a09f28e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-partition-all.json",
+          "sha256": "fa8710f33c07502805fa9bba2684afb9b8594c640a1bfca1924e4a99a3031da5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-4508692874118927530/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/FASEDHeader.const.h",
+          "sha256": "0e226593530bea90f29f02d18d3185934d98073b57c2dc90d9c21cb1a2eda9a5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/FASEDHeader.sv",
+          "sha256": "aa332afeee050f22700399a3416d57970640514d199dbc99af6d6aa70b373341"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/command.txt",
+          "sha256": "39c78705988bd353852357d436238efd170b5cea960997cf44e9e6c8c7bf9b52"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-extract-model-all.json",
+          "sha256": "d8d88b9a255e921d58c6feb2bc3fc0cbc36d9cf78d7d765295a8ce9ec505d0f1"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-partition-all.json",
+          "sha256": "ca5dc241833c7e523d61156e9d1bfdb2c33b02f40025efef05618106ead4916e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-sim-mapping.fir",
+          "sha256": "da0787908536bd38ff614c9be7f0054eff2f99a49186e7996aad33e278a4fdc5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-wrap-top-all.json",
+          "sha256": "d8d88b9a255e921d58c6feb2bc3fc0cbc36d9cf78d7d765295a8ce9ec505d0f1"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-extract-model-all.json",
+          "sha256": "d8d88b9a255e921d58c6feb2bc3fc0cbc36d9cf78d7d765295a8ce9ec505d0f1"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-partition-all.json",
+          "sha256": "ca5dc241833c7e523d61156e9d1bfdb2c33b02f40025efef05618106ead4916e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/FASEDHeader.const.h",
+          "sha256": "0d3e8070a7aa4f4ef11650b7e0de2fc02b361cd53d1b697b7d1407b56084d440"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/FASEDHeader.sv",
+          "sha256": "2abe5f7dba62dc819c63c829c4e63ca33e18c481535a56b76860366d168fc546"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/command.txt",
+          "sha256": "08321ec841597a103ad26da9e5c64fb29ea666277af26d349fbe5971d36ad982"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-extract-model-all.json",
+          "sha256": "8bfe15604373e0169212b4a1e075b86c88d382499b734fa857966fe27a8dcfb8"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-partition-all.json",
+          "sha256": "6f55e5078b856b354626f534918ddd05845a67a58b30492f6e16909896089783"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-sim-mapping.fir",
+          "sha256": "b2eb36252559df87095d0aa921a0292f367172a092d6b7b2d0e3adfcd4926ff9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-wrap-top-all.json",
+          "sha256": "8bfe15604373e0169212b4a1e075b86c88d382499b734fa857966fe27a8dcfb8"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-extract-model-all.json",
+          "sha256": "8bfe15604373e0169212b4a1e075b86c88d382499b734fa857966fe27a8dcfb8"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-partition-all.json",
+          "sha256": "6f55e5078b856b354626f534918ddd05845a67a58b30492f6e16909896089783"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-8629814733172884122/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/FASEDHeader.const.h",
+          "sha256": "aaa5a704faf7876c536c68a9061274921e32416892abf0de2feffbd5ba6bebbc"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/FASEDHeader.sv",
+          "sha256": "f87ddeeec4a8b5e7f039768ece6a3adc21051fe112e372fce66bfb2cfa36f2c6"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/command.txt",
+          "sha256": "cb727cdfc848f44b55413b317e3364625bcb0d771010c75a76627568373cabaa"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/compile.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/compile.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/driver.cc",
+          "sha256": "e78bf8a75cf0c81525ad0e2dce010ce16f556c8031dbe1ce1b0f379a45d20b8a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-autocounter.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-autocounter.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-bridge-extraction.fir",
+          "sha256": "34031b27b4889bfe5d0f82db893280427c73be7d3ec80d2f5813abb428787bd7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-bridge-extraction.json",
+          "sha256": "cb071ae23083f67b8fff009f3f8c667f8c035eeccae7ea45e4dfcd56bc31c742"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-channel-excision.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-channel-excision.json",
+          "sha256": "721512d3e37e817f76adc18573cb25b18fa9e6306c4ae1fa32225b8478380c53"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-debug-synthesis.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-debug-synthesis.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-extract-model-all.json",
+          "sha256": "7ed4bcbe965790900c75bee7d0f1fd5869648a0335b5a77314e42968c2e85ae9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame-defaults.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame-defaults.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame-transform.fir",
+          "sha256": "0334a48f151151e9d303d3ad2ad172492df7a49a7874a993184522f6734c4c08"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-find-default-clocks.json",
+          "sha256": "18029af637b3394340b83cb1830002c494245c9577bca17364a2d3498e1fbf36"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-gen-sram-models.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-gen-sram-models.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-infer-model-ports.fir",
+          "sha256": "ae5d9a12ca7578bec944bcab3e91d32abfbe7742a3b60c19ed92ddde6b219bd5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-infer-model-ports.json",
+          "sha256": "f52963279aae5e147416bd6a707118e41984f9f1cf4af76ac9ed49d21d70df4e"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-partition-all.json",
+          "sha256": "38fa0f078de89f65e51d24a82f2c3d8a61d2c4cf816d58e19b8a96a3b6eadffd"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-plusargs-transform.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-plusargs-transform.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-plusargs-wiring.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-plusargs-wiring.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-promote-passthrough.fir",
+          "sha256": "09d10f8a41a7482b2b9bb747b655bcd824f5fbcd321af23a189cade6f214a6a7"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-promote-passthrough.json",
+          "sha256": "2bf4352094d01a24a18c7819e29a7e1b6397bb05278f18249216db06d8eae943"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-sim-mapping.fir",
+          "sha256": "dc014729c24bf5470bed49d5b411d9913e7381f44cfb8c697e6a5c32da0e9bbe"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-split-expressions.fir",
+          "sha256": "eedf4f7259d5dbf7a07e0ee32ce2e428767cdcc11735f4755d2766cfd76a568c"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-split-expressions.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-trigger-wiring.fir",
+          "sha256": "1694a298eabaf403aa74281065e8d05a988e16491c60c7067132b81ae4658c0a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-trigger-wiring.json",
+          "sha256": "af37f2bf6b805374e5dab52236147f349124595d79372141d62bc178bdba8a0d"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-wrap-top-all.json",
+          "sha256": "7ed4bcbe965790900c75bee7d0f1fd5869648a0335b5a77314e42968c2e85ae9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/post-wrap-top.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-extract-model-all.json",
+          "sha256": "7ed4bcbe965790900c75bee7d0f1fd5869648a0335b5a77314e42968c2e85ae9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-extract-model.fir",
+          "sha256": "46b95d214f51cba9ac7a4c71a0cfbf96933fb64f36fe926faafe03157b09afcf"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-fame5-transform.fir",
+          "sha256": "5c430df120130f66b94d856ec767bfcfaca1e7b008a33ffe6b2f8b22ea2d2fe5"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-fame5-transform.json",
+          "sha256": "02a5850afcc65aa0f30b5ca569645d08948612aee25de8698f59a4656b6d9ea9"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-partition-all.json",
+          "sha256": "38fa0f078de89f65e51d24a82f2c3d8a61d2c4cf816d58e19b8a96a3b6eadffd"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-partition.fir",
+          "sha256": "3c29465c87e2d64e22d9b876e2e6cf120a56e2af4c7b42d161c580689febd46a"
+        },
+        {
+          "path": "<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/all-profiling-6515117859458972162/pre-partition.json",
+          "sha256": "4d341cc0727822c5ea6411c25072657ab1d3b53fd57a8007dca83d8e94bb4e80"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-fixed-final/manifest.json",
+          "sha256": "14661266173b81418da7d5e9f4f7a44cc666919906f69be02d678c74ddfb704b"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-fixed-final/result.json",
+          "sha256": "2dd8c7d6aa29fb888afedd5c781157c1f53e69ed6ac65741ee0bc836bdc9d8af"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-fixed-final/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-fased-header-fixed-final/stdout.log",
+          "sha256": "63fbff83f3f8fbbb8c1086592c6f1ec13ec12b6b6c47df5f3f60adfa84d8556f"
+        }
+      ]
+    }
+  },
+  "rtl_comparison": {
+    "control": {
+      "baseline": "a2efa42ad22e2a495a01b230defa781286054a3b5cfdb900d6f7a9bf16d500c7",
+      "fixed": "a2efa42ad22e2a495a01b230defa781286054a3b5cfdb900d6f7a9bf16d500c7",
+      "equal": true
+    },
+    "host-cycle": {
+      "baseline": "d91a48366925a34fcfd6313f29780c992b854f940b5a77620d9f91543a4ce0b2",
+      "fixed": "d91a48366925a34fcfd6313f29780c992b854f940b5a77620d9f91543a4ce0b2",
+      "equal": true
+    },
+    "stalls": {
+      "baseline": "0c6e9d0fe592b5f4a63f3ae047c4508789a2d08ed0c044a33bcdb161b6d9e14b",
+      "fixed": "0c6e9d0fe592b5f4a63f3ae047c4508789a2d08ed0c044a33bcdb161b6d9e14b",
+      "equal": true
+    },
+    "ranges": {
+      "baseline": "aa332afeee050f22700399a3416d57970640514d199dbc99af6d6aa70b373341",
+      "fixed": "aa332afeee050f22700399a3416d57970640514d199dbc99af6d6aa70b373341",
+      "equal": true
+    },
+    "collisions": {
+      "baseline": "2abe5f7dba62dc819c63c829c4e63ca33e18c481535a56b76860366d168fc546",
+      "fixed": "2abe5f7dba62dc819c63c829c4e63ca33e18c481535a56b76860366d168fc546",
+      "equal": true
+    },
+    "all-profiling": {
+      "baseline": "f87ddeeec4a8b5e7f039768ece6a3adc21051fe112e372fce66bfb2cfa36f2c6",
+      "fixed": "f87ddeeec4a8b5e7f039768ece6a3adc21051fe112e372fce66bfb2cfa36f2c6",
+      "equal": true
+    }
+  }
+}

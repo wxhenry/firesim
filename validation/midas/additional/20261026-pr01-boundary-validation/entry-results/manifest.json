@@ -1,0 +1,27 @@
+{
+  "commit": "b1a2b01c75b0637f15378ea8f0bdd48b1e70db15",
+  "status": " T sim/berkeley-hardfloat\n T sim/cde\n T sim/diplomacy\n T sim/rocket-chip\n",
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-O1",
+    "-g",
+    "-fsanitize=address",
+    "-fno-omit-frame-pointer",
+    "-fno-pie",
+    "-no-pie",
+    "-I<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/main/cc",
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/main/cc/main.cc",
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/test/cc/native_entry_stub.cc",
+    "-o",
+    "<UPSTREAM>/runs/20261026-pr01-boundary-validation/entry-results/native-entry-test"
+  ],
+  "timeout_seconds": 60,
+  "hardware_access": false,
+  "source_sha256": {
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/main/cc/main.cc": "c926e44c05e8014cc927092d27249836ceded2112c89ec7fa5be8bbe154c664b",
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/main/cc/entry.h": "fa6a172c144e8b29367302c9ba63c95d7225f9146cc93def9f2c9dfef133a2f4",
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/test/cc/native_entry_stub.cc": "5b61260590d43f45abd581d208ab0d9dd1a8e21f80ee1db8f184baef894d3d16",
+    "<UPSTREAM>/firesim-pr01-review-20261026/sim/midas/src/test/cc/run_entry_tests.py": "dc1be631b5e9ef7133494bc177a9eabc6bc5aaecc652d35d464d75c0f10b23f2"
+  }
+}

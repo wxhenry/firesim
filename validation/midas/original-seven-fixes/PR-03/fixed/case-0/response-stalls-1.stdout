@@ -1,0 +1,1 @@
+response-stalls: PASS; accepted/completed reads=32/32, writes=32/32, simultaneous=1, cycles=704

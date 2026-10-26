@@ -1,0 +1,82 @@
+{
+  "source_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "public_upload": false,
+  "scope": "guarded GCD 64,48 -> 16; independent SDK and runtime DDR boundary probes; no Rocket/Linux/bridge-stream/AutoILA acceptance",
+  "gcd": {
+    "state": "completed",
+    "hardware_tested": true,
+    "functional_pass": true,
+    "exit_code": 0,
+    "deployment_manifest_sha256": "d8c9410241a3740961a8d0d5a1a7164ce33838e4c057745695165fbdd78c252c",
+    "checks": {
+      "runtime_libraries": true,
+      "guard_before": true,
+      "pcie_before": true,
+      "health_before": true,
+      "device_before": true,
+      "program": true,
+      "device_programmed": true,
+      "pcie_programmed": true,
+      "clock_readback": true,
+      "clock_measure": true,
+      "pcie_native": true,
+      "native_driver": true,
+      "functional_output": true,
+      "guard_after": true,
+      "pcie_after": true,
+      "health_after": true,
+      "device_after": true
+    },
+    "elapsed_seconds": 82.92038470799162
+  },
+  "build": {
+    "platform": "xilinx_alveo_v80_slash",
+    "clock_hz": 40000000,
+    "timing": {
+      "wns": 0.085,
+      "tns": 0.0,
+      "whs": 0.018,
+      "ths": 0.0,
+      "wpws": 0.0,
+      "tpws": 0.0
+    },
+    "driver_sha256": "71e207f5cf9f51cdd04718a2b2426fd876b8020de10260133ab86253557f251b",
+    "header_sha256": "6fe75650f1bfbd2e943701161ee10668ab9d1e7ed5e7fc621cad5f2f475752cf",
+    "qualification_sha256": "a20c7b13e7068d94d7bc1c2d4bcad7dd4ebc90e8837574326c0f94b2c334a39f"
+  },
+  "artifact_hashes": {
+    "firesim.vbin": "5f762897137bc90709e0a2c6234bb5233cd7226eb25d10ff93ebfb8cfe5f5ef5",
+    "partial.pdi": "939dee2d6268006539b89bbf5676c64419ebdd4ef34298ca7bd5bdedc085747c",
+    "qualified-driver": "71e207f5cf9f51cdd04718a2b2426fd876b8020de10260133ab86253557f251b"
+  },
+  "host": {
+    "running_kernel": "7.0.0-38-generic",
+    "modules": {
+      "ami": {
+        "sha256": "9f96d129e20e4889fb27ff385e5d415e3d09ed78f3cbdb58b89ffac3834406d4",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "loaded_srcversion": "5003B3AD68479B09CB4BE8E"
+      },
+      "slash": {
+        "sha256": "5f98b6d6adc269bb27d62df8507dca23e7ce783cee50e01ae905a594479d5f74",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "loaded_srcversion": "CEBB5BD3FC4D9C6CE6CFFED"
+      }
+    },
+    "vrtd_sha256": "8180b8401262b1012a0a3294d10faa5ee448e577b064806af4fe72874d3b758e"
+  },
+  "excluded_claims": [
+    "physical MMIO fault containment",
+    "root cause of previous PCIe loss",
+    "whole project qualification"
+  ],
+  "sdk-boundary": {
+    "exit_code": 0,
+    "raw_result_sha256": "7d8f4be20d47c5b520d9a9fc3df055c614ed8835be2cac6b442b7fd35c7fa5db"
+  },
+  "runtime-boundary": {
+    "exit_code": 0,
+    "raw_result_sha256": "40b0e025ab5ea2e342d777225a5e4e6af23d2de56c207e46a14e180eb48a5b49"
+  },
+  "raw_board_acceptance_sha256": "a82d6708016a105c2a5a6610f0767bcc88f58af772c3f50cdeff136ea8b20165"
+}

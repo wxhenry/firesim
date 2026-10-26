@@ -1,0 +1,14 @@
+verilator
+--cc
+--exe
+--build
+-j
+2
+--assert
+-Wno-fatal
+--top-module
+MCRPaddingHarness
+-Mdir
+<UPSTREAM>/firesim-pr01-standalone-20261026/sim/test_run_dir/MCRPaddingSpec/padding-15617126114596185163/obj
+<UPSTREAM>/firesim-pr01-standalone-20261026/sim/test_run_dir/MCRPaddingSpec/padding-15617126114596185163/MCRPaddingHarness.v
+<UPSTREAM>/firesim-pr01-standalone-20261026/sim/midas/src/test/cc/mcr_padding_test.cc

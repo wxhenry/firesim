@@ -1,0 +1,5 @@
+[
+  "<V80_WORKSPACE>/framework/cy-clone/chipyard/.conda-env/bin/python",
+  "-B",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/platforms/xilinx_alveo_v80_slash/tests/test_manager.py"
+]

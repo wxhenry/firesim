@@ -1,0 +1,44 @@
+[
+  {
+    "path": "gcd/stdout.log",
+    "source_reference": "runs/20261026-board-trial-gcd-acceptance/native-driver.stdout.log",
+    "raw_sha256": "344b74d0b964b0415f53a54f40b17190d056866d0b7f15bc8772561f70800c2f",
+    "sha256": "6b0764fd09ad43df85d94d12930d75bd58046f0c8bad65ef97c990f1b3f6f751",
+    "redaction": "workspace/home path prefixes only"
+  },
+  {
+    "path": "gcd/stderr.log",
+    "source_reference": "runs/20261026-board-trial-gcd-acceptance/native-driver.stderr.log",
+    "raw_sha256": "742ca0effc45c7323258106d20f3d7b56a66ec55af5ab5236e82c10cefe40577",
+    "sha256": "742ca0effc45c7323258106d20f3d7b56a66ec55af5ab5236e82c10cefe40577",
+    "redaction": "workspace/home path prefixes only"
+  },
+  {
+    "path": "sdk-boundary/stdout.log",
+    "source_reference": "runs/20261026-host-dma-boundary-board/dma-boundaries.stdout.log",
+    "raw_sha256": "84fd447a4c4e4b1228f18540eb5c5f95a2fd271f1f7a6494e6572c67e69a6a5f",
+    "sha256": "84fd447a4c4e4b1228f18540eb5c5f95a2fd271f1f7a6494e6572c67e69a6a5f",
+    "redaction": "workspace/home path prefixes only"
+  },
+  {
+    "path": "sdk-boundary/stderr.log",
+    "source_reference": "runs/20261026-host-dma-boundary-board/dma-boundaries.stderr.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "redaction": "workspace/home path prefixes only"
+  },
+  {
+    "path": "runtime-boundary/stdout.log",
+    "source_reference": "runs/20261026-runtime-dma-boundary-board/dma-boundaries.stdout.log",
+    "raw_sha256": "bd9a10242c6bdb85ae5d424977c672542b1d88091fb8e8c479ad44b23b844c8f",
+    "sha256": "27eb7eed30c30f93c430bd6b7ce4d706a0ee6cc20e277e4911e1fd7febf9f9db",
+    "redaction": "workspace/home path prefixes only"
+  },
+  {
+    "path": "runtime-boundary/stderr.log",
+    "source_reference": "runs/20261026-runtime-dma-boundary-board/dma-boundaries.stderr.log",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "redaction": "workspace/home path prefixes only"
+  }
+]

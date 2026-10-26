@@ -1,0 +1,61 @@
+{
+  "runs": {
+    "baseline": {
+      "commit": "bbc1083f4a8aede1ad575df4ea7e6af66bf9f939",
+      "status": "?? sim/midas/src/test/scala/midas/BankConflictDefaultsSpec.scala\n",
+      "source_manifest": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-baseline-final/manifest.json",
+      "result": {
+        "exit_code": 1,
+        "elapsed_seconds": 9.480880599003285,
+        "hardware_access": false
+      },
+      "files": [
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-baseline-final/result.json",
+          "sha256": "0294afaf26db1018d24fd55063e8a7d90757bae5ab861eee57fafa32563d39e1"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-baseline-final/manifest.json",
+          "sha256": "4d26702bab4d5e4e2793978abba07c98de8845e39aa3f311ee4ee0eed70900ad"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-baseline-final/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-baseline-final/stdout.log",
+          "sha256": "93b93cb8c3737b4274b7ea0614dbe5d7129523d576f86db1f2462ba330761c8d"
+        }
+      ]
+    },
+    "fixed": {
+      "commit": "7c43754943cf94e62bfe21b35d21c034f157daad",
+      "status": "",
+      "source_manifest": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-fixed-final/manifest.json",
+      "result": {
+        "exit_code": 0,
+        "elapsed_seconds": 20.595834086998366,
+        "hardware_access": false
+      },
+      "files": [
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-fixed-final/result.json",
+          "sha256": "88409b55cf08fac9de0aad560251cf4efe37cf7218a7ac3af0480defd10acfa8"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-fixed-final/manifest.json",
+          "sha256": "26072a137f6c3cf28308c2e930d06ac9aa6d8c50b8cb8ea099631f8181072611"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-fixed-final/stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "<UPSTREAM_WORK>/runs/20261024-bank-defaults-fixed-final/stdout.log",
+          "sha256": "b025dba5409b8bd094b56591cac132b3a624193fda10281a492a426521c5df20"
+        }
+      ]
+    }
+  },
+  "scope": "Runtime configuration defaults; not hardware traffic validation."
+}

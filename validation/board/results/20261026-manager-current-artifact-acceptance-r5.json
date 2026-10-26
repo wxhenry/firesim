@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "hardware_access": false,
+  "rerun": false,
+  "public_upload": false,
+  "state": "completed",
+  "target_cycles": 4738,
+  "qualified_checks": 17,
+  "source_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "proof": "<V80_WORKSPACE>/upstream/runs/20261026-manager-current-flow/remote/sim_slot_0/v80-runtime-proof-f2ca76967bcb438d9e8724e1ad63b475/board-acceptance.json",
+  "proof_sha256": "ac8d2609ee90b09e8366dfc20ade08a1b6d05f9d4ad40529bf37f3fd5fdfbb32",
+  "evidence_index_sha256": "e634dc5c7cea6132831cba1c7503f1e8ed7ebfbf07776dfa95cea6463b8f6dcb",
+  "collected_results": "<V80_WORKSPACE>/upstream/firesim-manager-acceptance-20261026/deploy/results-workload/2026-10-26--05-27-51-v80-current-manager-current-source-20261026/v80-current-manager0",
+  "correction": "Outer r3 assertion incorrectly required native PASS text inside Manager uartlog; uartlog contains successful qualified-run JSON referring to separately retained native stdout/stderr.",
+  "collection_warning": "HW_CFG_SUMMARY is generated locally by unchanged Manager; extra configured remote copy returned rsync 23 because no remote file exists. Local summary retained; not claiming successful remote summary collection.",
+  "scope": "Actual unchanged Manager task registry and Fabric SSH, accepted Rocket bundle launch, 4738-cycle ISA add, successful completion detection and collected launch/summary files. Native console retained in qualified proof; live UART forwarding not claimed.",
+  "elapsed_seconds": 0.04741062100220006
+}

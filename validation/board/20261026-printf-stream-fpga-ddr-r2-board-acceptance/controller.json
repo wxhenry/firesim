@@ -1,0 +1,9 @@
+{
+  "pid": 3246479,
+  "start_ticks": "8281128",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-printf-stream-fpga-ddr-r2-candidate",
+  "deployment_manifest_sha256": "6f521e22331e3d40dc9f4d544efd02bcae788273493e5de33b20d0db96326431",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

@@ -1,0 +1,10 @@
+%Error: Cannot find verilated_std.sv containing built-in std:: definitions: <HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             <HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv
+             <HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv.v
+             <HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv.sv
+             <UPSTREAM>/firesim-pr01-standalone-20261026/sim/test_run_dir/BankConflictModelSpec/verilator-8508884486408553352/requests-1/obj/<HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv
+             <UPSTREAM>/firesim-pr01-standalone-20261026/sim/test_run_dir/BankConflictModelSpec/verilator-8508884486408553352/requests-1/obj/<HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv.v
+             <UPSTREAM>/firesim-pr01-standalone-20261026/sim/test_run_dir/BankConflictModelSpec/verilator-8508884486408553352/requests-1/obj/<HOME>/cy-clone/chipyard/.conda-env/share/verilator/include/verilated_std.sv.sv
+%Error: Exiting due to 2 error(s)

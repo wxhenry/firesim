@@ -1,0 +1,11 @@
+{
+  "commit": "c3b01da47b6726f5a6327e2d1db199e66475c336",
+  "status": " M CHANGELOG.md\n M sim/midas/src/main/cc/main.cc\n M sim/midas/src/test/cc/README.md\n?? sim/midas/src/test/cc/native_entry_stub.cc\n?? sim/midas/src/test/cc/run_entry_tests.py\n",
+  "command": [
+    "python3",
+    "<UPSTREAM>/review/check_native_entry_parent_20261025.py"
+  ],
+  "timeout_seconds": 60,
+  "hardware_access": false,
+  "started_at_utc": "2026-10-25T07:50:56.746400+00:00"
+}

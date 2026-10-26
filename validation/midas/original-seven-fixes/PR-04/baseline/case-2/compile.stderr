@@ -1,0 +1,38 @@
+In file included from /usr/include/unistd.h:226,
+                 from /usr/include/c++/13/bits/atomic_wait.h:45,
+                 from /usr/include/c++/13/bits/atomic_base.h:42,
+                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,
+                 from /usr/include/c++/13/memory:81,
+                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,
+                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,
+                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,
+                 from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:27,
+                 from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/driver.cc:2:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:30:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘writeStalled’
+   30 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, writeStalled) == 0 * sizeof(uint64_t), "invalid writeStalled");\
+      |                                                       ^~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:31:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘readStalled’
+   31 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, readStalled) == 1 * sizeof(uint64_t), "invalid readStalled");\
+      |                                                       ^~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:32:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘tokenStalled’
+   32 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, tokenStalled) == 2 * sizeof(uint64_t), "invalid tokenStalled");\
+      |                                                       ^~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:33:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘hostMemIdleCycles’
+   33 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, hostMemIdleCycles) == 3 * sizeof(uint64_t), "invalid hostMemIdleCycles");\
+      |                                                       ^~~~~~~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:34:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘hostWritesOutstanding’
+   34 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, hostWritesOutstanding) == 4 * sizeof(uint64_t), "invalid hostWritesOutstanding");\
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:35:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘hostReadsOutstanding’
+   35 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, hostReadsOutstanding) == 5 * sizeof(uint64_t), "invalid hostReadsOutstanding");\
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+In file included from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/driver.cc:6:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:36:53: error: static assertion failed: invalid structure
+   36 | static_assert(sizeof(FASEDMEMORYTIMINGMODEL_struct) == 6 * sizeof(uint64_t), "invalid structure"); \
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:36:53: note: the comparison reduces to ‘(1 == 48)’
+In file included from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/driver.cc:11:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h: In function ‘void instantiate(widget_registry_t&, simif_t&, const std::vector<std::__cxx11::basic_string<char> >&)’:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/stalls-11100508728745970046/FASEDHeader.const.h:75:1: error: too many initializers for ‘FASEDMEMORYTIMINGMODEL_struct’
+   75 | },
+      | ^

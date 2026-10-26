@@ -1,0 +1,26 @@
+In file included from /usr/include/unistd.h:226,
+                 from /usr/include/c++/13/bits/atomic_wait.h:45,
+                 from /usr/include/c++/13/bits/atomic_base.h:42,
+                 from /usr/include/c++/13/bits/shared_ptr_atomic.h:33,
+                 from /usr/include/c++/13/memory:81,
+                 from <FIRESIM>/sim/midas/src/main/cc/core/simif.h:9,
+                 from <FIRESIM>/sim/midas/src/main/cc/core/bridge_driver.h:6,
+                 from <FIRESIM>/sim/midas/src/main/cc/bridges/fased_memory_timing_model.h:7,
+                 from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:27,
+                 from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/driver.cc:2:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:30:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘addrCollision’
+   30 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, addrCollision) == 0 * sizeof(uint64_t), "invalid addrCollision");\
+      |                                                       ^~~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:31:55: error: ‘struct FASEDMEMORYTIMINGMODEL_struct’ has no member named ‘collisionAddr’
+   31 | static_assert(offsetof(FASEDMEMORYTIMINGMODEL_struct, collisionAddr) == 1 * sizeof(uint64_t), "invalid collisionAddr");\
+      |                                                       ^~~~~~~~~~~~~
+In file included from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/driver.cc:6:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:32:53: error: static assertion failed: invalid structure
+   32 | static_assert(sizeof(FASEDMEMORYTIMINGMODEL_struct) == 2 * sizeof(uint64_t), "invalid structure"); \
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:32:53: note: the comparison reduces to ‘(1 == 16)’
+In file included from <FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/driver.cc:11:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h: In function ‘void instantiate(widget_registry_t&, simif_t&, const std::vector<std::__cxx11::basic_string<char> >&)’:
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/collisions-18304296196252289634/FASEDHeader.const.h:63:1: error: too many initializers for ‘FASEDMEMORYTIMINGMODEL_struct’
+   63 | },
+      | ^

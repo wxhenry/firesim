@@ -1,0 +1,9 @@
+{
+  "pid": 3254341,
+  "start_ticks": "8289765",
+  "bundle": "<V80_WORKSPACE>/upstream/deployments/20261026-autocounter-r1-candidate",
+  "deployment_manifest_sha256": "782ae4f1f8e96a86c5d2fe38c5fd153467f4f1a9dbbb7cd75da2f4105940ce36",
+  "state": "exited",
+  "exit_code": 0,
+  "cleanup_completed": true
+}

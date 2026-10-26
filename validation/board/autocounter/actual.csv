@@ -1,0 +1,10 @@
+version,1
+Clock Domain Name, BaseClock, Base Multiplier, 1, Base Divisor, 1
+label,local_cycle,AutoCounterModule_dut_ENABLED,AutoCounterModule_dut_child_ODD_LFSR,AutoCounterModule_dut_MULTIBIT_EVENT,AutoCounterModule_dut_PASSTHROUGH,AutoCounterModule_dut_ENABLED_DIV_4
+"description","Clock cycles elapsed in the local domain.","Enabled cycles, should be identical to cycle count minus reset cycles","Number of cycles the LFSR is has an odd value","A multibit event. Here's a quote: "" and a comma: , to check description serialization.","A multibit that is preserved and not accumulated","Count the number of times the enabled cycle count is divisible by 4. Should be equal to number of cycles minus reset cycles divided by 4"
+type,Accumulate,Accumulate,Accumulate,Accumulate,Identity,Accumulate
+event width,1,1,1,4,64,1
+accumulator width,64,64,64,64,64,64
+1000,1000,998,509,7461,81985530642677487,250
+2000,2000,1998,987,14985,81985530642677487,500
+3000,3000,2998,1472,22461,81985530642677487,750

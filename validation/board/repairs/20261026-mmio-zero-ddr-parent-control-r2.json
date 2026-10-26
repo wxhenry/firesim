@@ -1,0 +1,38 @@
+{
+  "exit_code": 0,
+  "hardware_access": false,
+  "total_timeout_seconds": 120,
+  "variants": {
+    "none": {
+      "no-ddr-control": {
+        "exit_code": 1,
+        "expected_exit_code": 1
+      },
+      "no-ddr-reservation": {
+        "exit_code": 0,
+        "expected_exit_code": 0
+      },
+      "invalid-memory-config": {
+        "exit_code": 0,
+        "expected_exit_code": 0
+      }
+    },
+    "mmio": {
+      "no-ddr-control": {
+        "exit_code": 1,
+        "expected_exit_code": 1
+      },
+      "no-ddr-reservation": {
+        "exit_code": 0,
+        "expected_exit_code": 0
+      },
+      "invalid-memory-config": {
+        "exit_code": 0,
+        "expected_exit_code": 0
+      }
+    }
+  },
+  "parent_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "reproduced_failures": 2,
+  "passing_controls": 4
+}

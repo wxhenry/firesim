@@ -1,0 +1,45 @@
+{
+  "exit_code": 1,
+  "hardware_access": false,
+  "public_upload": false,
+  "total_timeout_seconds": 3000,
+  "stages": [
+    {
+      "name": "scala",
+      "exit_code": 0
+    },
+    {
+      "name": "build-tools",
+      "exit_code": 0
+    },
+    {
+      "name": "deployment",
+      "exit_code": 0
+    }
+  ],
+  "commit": "8240c34016481e99001ffcef29d1b95822287a13",
+  "suites": [
+    "midas.tests.AutoCounterBackpressureSpec",
+    "midas.tests.BankConflictDefaultsSpec",
+    "midas.tests.BankConflictModelSpec",
+    "midas.tests.DDRManagedStreamEngineSpec",
+    "midas.tests.MCRFileSpec",
+    "midas.tests.MCRPaddingSpec",
+    "midas.tests.SlashDDRStreamDMASpec",
+    "midas.tests.SlashDDRStreamIntegrationSpec",
+    "midas.tests.SlashDebugAuditSpec",
+    "midas.tests.AutoILAAXISSpec",
+    "midas.stage.FASEDHeaderSpec",
+    "midas.stage.FASEDResponseSpec",
+    "midas.stage.FASEDHostTimingSpec",
+    "midas.stage.GoldenGateCompilerPhaseSpec",
+    "midas.stage.HostTimingSpec",
+    "midas.stage.SlashFPGAManagedPlatformSpec",
+    "midas.stage.SlashMMIOPlatformSpec",
+    "midas.stage.SlashPlatformSpec",
+    "midas.stage.SlashDebugPlatformSpec",
+    "midas.stage.SynchronousRAMSpec",
+    "midas.stage.SynchronousRAMHostTimingSpec"
+  ],
+  "state": "metasim"
+}

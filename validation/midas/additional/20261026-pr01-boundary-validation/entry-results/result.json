@@ -1,0 +1,24 @@
+{
+  "hardware_access": false,
+  "build_exit_code": 0,
+  "cases": {
+    "success": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "failure-code": {
+      "exit_code": 17,
+      "passed": true
+    },
+    "standard": {
+      "exit_code": 1,
+      "passed": true
+    },
+    "nonstandard": {
+      "exit_code": 1,
+      "passed": true
+    }
+  },
+  "elapsed_seconds": 0.3442004729877226,
+  "exit_code": 0
+}

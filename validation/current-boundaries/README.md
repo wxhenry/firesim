@@ -1,0 +1,7 @@
+# Exact contribution boundaries
+
+PR1 logs are in ../midas. PR2 at a07abd7a passed 84 driver cases, 68 runtime cases and three real-SDK header compile variants. Runtime device state in CPU tests is an independent predicted model; no board I/O is performed by these tests. PR3 at 8240c340 passed all 153 cases in 21 Scala/RTL suites, platform build/deployment tests and metasim stream regression. PR4 at 77535232 passed all ten Manager tests. PR5 at 493f57d5 has the final reviewed source tree and documentation only.
+
+PR4 earlier failures are retained: the initial local file URI encoded spaces as percent escapes, which the existing downloader treats literally; then its cache directory contained spaces, which the existing generic tar extraction command does not quote. The fixture now uses a literal absolute file URI and a cache path without whitespace. Platform-specific launch/copy quoting tests keep deliberate spaces. This does not add percent-decoded file URI or generic cache-whitespace support.
+
+Only selected JSON records and complete stdout/stderr are included. Generated sources, RTL, test executables, vendor headers and binary reports are excluded. Local path prefixes are replaced, with original/sanitized hashes retained. public_upload=false in historical records describes their creation time. Some manifests reference larger private local archives that are intentionally not included.

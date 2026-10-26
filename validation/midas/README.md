@@ -1,0 +1,11 @@
+# MIDAS fixes: selected verification logs
+
+Prepared for the FireSim MIDAS fixes contribution discussed in issue #1901.
+
+`original-seven-fixes` preserves the previous curated packet: 71 distinct checks, 35 original-code failures and 20 passing original-code controls, plus 16 pre-existing fixed-only checks. Its combined historical tip is 767c95e6. The new first PR boundary is b1a2b01c: 38 C++ driver cases, four process-entry cases and 41 Scala/RTL cases pass. Repeated cases across these runs are not added together as distinct checks.
+
+The boundary C++ and entry results are in `additional/20261026-pr01-boundary-validation`. Three Scala suites passed 13 cases in r3; the remaining five suites passed 28 cases in r5 after correcting a relocated Verilator resource path. Earlier failed compiler-environment logs and the successful rerun logs are retained. `boundary-rtl` contains build/execute logs for those real RTL tests, including the failed environment attempt. The first worktree/JGit setup attempts are local environment failures before tests and are described in the local boundary record.
+
+Additional parent/fixed logs cover process-entry exceptions, bounded initialization and padded register responses. Parent padding outer timeout alone is not the oracle: inspect the transaction transcript; mapped controls pass while padding replies are missing. The added MCR, initialization and process-entry production files are identical to the corresponding integrated source used by accepted GCD/Rocket/stream hardware. Other original-fix files can have later changes in the integrated platform; this packet reports the first PR boundary separately. These CPU tests alone do not qualify a platform or guarantee fault containment.
+
+Only selected text logs, command records, manifests and result records are included. Source/generated HDL, executables, vendor images/checkpoints, private host configuration, system logs and credentials are excluded. Local path prefixes are replaced with placeholders; selected secret patterns were checked. `provenance.json` records source references and original/sanitized hashes, and `manifest.json` hashes the package. References inside a log may identify larger local archives that are not included.

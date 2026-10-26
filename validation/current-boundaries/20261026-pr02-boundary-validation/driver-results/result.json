@@ -1,0 +1,125 @@
+{
+  "suites": {
+    "fased": {
+      "build_exit_code": 0,
+      "cases": {
+        "histogram-lifetime": 0,
+        "range-lifetime": 0,
+        "model-index": 0,
+        "output-isolation": 0,
+        "defaults": 0,
+        "unsigned32": 0,
+        "hex32": 0,
+        "decimal": 0,
+        "negative": 0,
+        "overflow": 0,
+        "trailing-garbage": 0,
+        "empty": 0
+      }
+    },
+    "simulation": {
+      "build_exit_code": 0,
+      "cases": {
+        "success": 0,
+        "late-failure": 0,
+        "early-failure": 0,
+        "multiple-failures": 0,
+        "success-before-failure": 0,
+        "nonterminating": 0,
+        "timeout": 0,
+        "init-pending": 0,
+        "init-invalid": 0,
+        "init-unavailable": 0,
+        "init-wait-timeout": 0,
+        "init-wait-ready": 0,
+        "init-wait-invalid": 0,
+        "init-timeout-zero": 0,
+        "init-timeout-negative": 0,
+        "init-timeout-overflow": 0,
+        "init-timeout-upper": 0,
+        "init-timeout-empty": 0,
+        "init-timeout-trailing": 0,
+        "init-timeout-plus": 0,
+        "init-timeout-space": 0,
+        "init-timeout-duplicate": 0,
+        "init-timeout-min": 0,
+        "init-timeout-max": 0
+      }
+    },
+    "scheduler": {
+      "build_exit_code": 0,
+      "cases": {
+        "profile-lifetime": 0,
+        "no-profile": 0
+      }
+    },
+    "loadmem": {
+      "build_exit_code": 0,
+      "cases": {
+        "legacy-single-64": 0,
+        "legacy-chunk-64": 0,
+        "bulk-single-64": 0,
+        "bulk-chunk-64": 0,
+        "declined-64": 0,
+        "flush-read-64": 0,
+        "mixed-64": 0,
+        "flush-zero-64": 0,
+        "legacy-file-64": 0,
+        "bulk-file-64": 0,
+        "zero-length-64": 0,
+        "legacy-single-512": 0,
+        "legacy-chunk-512": 0,
+        "bulk-single-512": 0,
+        "bulk-chunk-512": 0,
+        "declined-512": 0,
+        "flush-read-512": 0,
+        "mixed-512": 0,
+        "flush-zero-512": 0,
+        "legacy-file-512": 0,
+        "bulk-file-512": 0,
+        "zero-length-512": 0
+      }
+    },
+    "fpga-push": {
+      "build_exit_code": 0,
+      "cases": {
+        "pull-init": 0,
+        "init": 0,
+        "linear": 0,
+        "wrap": 0,
+        "required": 0,
+        "full": 0,
+        "zero": 0,
+        "invalid": 0,
+        "invalid-ring": 0,
+        "corrupt-credit": 0,
+        "unaligned-credit": 0,
+        "doorbell-timeout": 0,
+        "consume-timeout": 0,
+        "flush-timeout": 0,
+        "flush": 0,
+        "counter-wrap": 0
+      }
+    },
+    "fpga-stream": {
+      "build_exit_code": 0,
+      "cases": {
+        "linear": 0,
+        "wrap": 0,
+        "required": 0,
+        "zero": 0
+      }
+    },
+    "fpga-flush": {
+      "build_exit_code": 0,
+      "cases": {
+        "immediate": 0,
+        "slow-progress": 0,
+        "timeout": 0,
+        "io-error": 0
+      }
+    }
+  },
+  "hardware_access": false,
+  "elapsed_seconds": 105.83181718298874
+}

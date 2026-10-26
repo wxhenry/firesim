@@ -1,0 +1,25 @@
+{
+  "parent_commit": "c3b01da47b6726f5a6327e2d1db199e66475c336",
+  "hardware_access": false,
+  "cases": {
+    "success": {
+      "exit_code": 0,
+      "cleanup": true
+    },
+    "failure-code": {
+      "exit_code": 17,
+      "cleanup": true
+    },
+    "standard": {
+      "exit_code": -6,
+      "cleanup": false
+    },
+    "nonstandard": {
+      "exit_code": -6,
+      "cleanup": false
+    }
+  },
+  "expected_regressions": 2,
+  "controls": 2,
+  "matched": true
+}

@@ -1,0 +1,17 @@
+[
+  "g++",
+  "-std=c++20",
+  "-O1",
+  "-c",
+  "-I<V80_WORKSPACE>/upstream/runs/20261026-pr02-boundary-validation/runtime-results/real-sdk-none",
+  "-I<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/sim/midas/src/main/cc",
+  "-idirafter",
+  "<V80_WORKSPACE>/framework/cy-clone/chipyard/.conda-env/include",
+  "-idirafter",
+  "<V80_WORKSPACE>/framework/cy-clone/chipyard/.conda-env/include/libxml2",
+  "-idirafter",
+  "<V80_WORKSPACE>/upstream/slash-sdk-install/include",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/sim/midas/src/main/cc/simif_xilinx_alveo_v80_slash.cc",
+  "-o",
+  "<V80_WORKSPACE>/upstream/runs/20261026-pr02-boundary-validation/runtime-results/real-sdk-none/runtime.o"
+]

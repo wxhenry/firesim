@@ -1,0 +1,42 @@
+{
+  "suites": {
+    "fased": {
+      "build_exit_code": 0,
+      "cases": {
+        "histogram-lifetime": 0,
+        "range-lifetime": 0,
+        "model-index": 0,
+        "output-isolation": 0,
+        "defaults": 0,
+        "unsigned32": 0,
+        "hex32": 0,
+        "decimal": 0,
+        "negative": 0,
+        "overflow": 0,
+        "trailing-garbage": 0,
+        "empty": 0
+      }
+    },
+    "simulation": {
+      "build_exit_code": 0,
+      "cases": {
+        "success": 0,
+        "late-failure": 0,
+        "early-failure": 0,
+        "multiple-failures": 0,
+        "success-before-failure": 0,
+        "nonterminating": 0,
+        "timeout": 0
+      }
+    },
+    "scheduler": {
+      "build_exit_code": 0,
+      "cases": {
+        "profile-lifetime": 0,
+        "no-profile": 0
+      }
+    }
+  },
+  "hardware_access": false,
+  "elapsed_seconds": 35.954970783088356
+}

@@ -1,0 +1,2 @@
+<FIRESIM>/sim/test_run_dir/FASEDResponseSpec/responses-8885689622735100950/obj/VFPGATop
+write-slverr

@@ -1,0 +1,38 @@
+{
+  "public_upload": false,
+  "state": "local-boundary-validated",
+  "base": "9db588176c19e7252ed3027b2028bc21095f863a",
+  "historical_slice": "767c95e659af10dc9c3f25541618c9b40450dc4c",
+  "final_source": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "exact_final_files": [
+    "sim/midas/src/main/cc/bridges/master.cc",
+    "sim/midas/src/main/cc/core/simulation.cc",
+    "sim/midas/src/main/cc/core/simulation.h",
+    "sim/midas/src/main/cc/main.cc",
+    "sim/midas/src/main/scala/midas/widgets/Lib.scala",
+    "sim/midas/src/test/cc/simulation_flow_test.cc",
+    "sim/midas/src/test/cc/native_entry_stub.cc",
+    "sim/midas/src/test/cc/run_entry_tests.py",
+    "sim/midas/src/test/cc/mcr_file_read_test.cc",
+    "sim/midas/src/test/cc/mcr_padding_test.cc",
+    "sim/midas/src/test/scala/midas/MCRFileSpec.scala",
+    "sim/midas/src/test/scala/midas/MCRPaddingSpec.scala"
+  ],
+  "scope": "Original compiler/FASED fixes plus current generic initialization, entry and MCR safety fixes; no SLASH platform enabled",
+  "candidate_commit": "b1a2b01c",
+  "validation": {
+    "cpp": {
+      "cases": 38,
+      "entry_cases": 4,
+      "result": "runs/20261026-pr01-boundary-validation/result.json"
+    },
+    "scala": {
+      "total_cases": 41,
+      "first_three_suites_passed": 13,
+      "result": "runs/20261026-pr01-boundary-validation-r3/result.json",
+      "remaining_five_suites_passed": 28,
+      "remaining_result": "runs/20261026-pr01-boundary-validation-r5/result.json"
+    },
+    "environment_corrections": "Standalone Git repository, real local dependency clones, /usr/local/bin/verilator with /usr/local/share/verilator; previous failures retained"
+  }
+}

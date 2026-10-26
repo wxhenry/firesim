@@ -1,0 +1,6 @@
+g++
+-std=c++20
+-fsyntax-only
+-I
+<FIRESIM>/sim/midas/src/main/cc
+<FIRESIM>/sim/test_run_dir/FASEDHeaderSpec/ranges-11539339889550288953/driver.cc

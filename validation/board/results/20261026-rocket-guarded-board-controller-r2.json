@@ -1,0 +1,29 @@
+{
+  "exit_code": 0,
+  "state": "completed",
+  "total_timeout_seconds": 16000,
+  "cases": [
+    {
+      "name": "rv64ui-p-add",
+      "physical_pass": true,
+      "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64ui-p-add/board-acceptance.json",
+      "program_sha256": "5734d6c02d4724a1aa39b706fbbd7c78f28bb332e735c23d34fe3a04390f675c"
+    },
+    {
+      "name": "rv64um-p-mul",
+      "physical_pass": true,
+      "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64um-p-mul/board-acceptance.json",
+      "program_sha256": "b6a66962eebd4245ca8de5b1d14d29727637322d1e064c625616d8e96f4aad5a"
+    },
+    {
+      "name": "rv64mi-p-csr",
+      "physical_pass": true,
+      "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-rocket-board-rv64mi-p-csr/board-acceptance.json",
+      "program_sha256": "a6f4db4b554f7a60c51ac034cf2ca085a0f5826b2a5986f59850ec329da2f618"
+    }
+  ],
+  "public_upload": false,
+  "candidate_manifest_sha256": "51f860e4208f74f2a4153a05aa5ae9f7d6f4ad5b55b33de83ac1176d2edcc766",
+  "scope": "three exact CPU-verified ISA programs on matching Rocket image; not Linux/stream acceptance",
+  "elapsed_seconds": 5473.785976476996
+}

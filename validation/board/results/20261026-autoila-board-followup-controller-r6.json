@@ -1,0 +1,35 @@
+{
+  "exit_code": 0,
+  "state": "completed",
+  "public_upload": false,
+  "total_timeout_seconds": 36000,
+  "source_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "stages": [
+    {
+      "name": "board",
+      "exit_code": 0
+    }
+  ],
+  "captures": {
+    "capture.csv": {
+      "samples": 1024,
+      "first_values": [
+        64,
+        48
+      ],
+      "sha256": "e79ff78d858439901125102adf3d714b4310a7f61f0f7c40848ac759daac3a6d"
+    },
+    "capture-final.csv": {
+      "samples": 1024,
+      "first_values": [
+        16,
+        16
+      ],
+      "sha256": "148264850493faae7baae8b7d08df615ab10134aa13c3cbdfc55b488669b9a7e"
+    }
+  },
+  "qualified_checks": 17,
+  "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-autoila-gcd-r1-board-capture-acceptance-r3/board-acceptance.json",
+  "scope": "Current generated AXIS AutoILA hardware and real PCIe/HSDP captures via separately recorded private host-tool extension; public launcher automatic capture not claimed",
+  "elapsed_seconds": 80.62954471800185
+}

@@ -1,0 +1,197 @@
+{
+  "exit_code": 0,
+  "source_commit": "90d5e2c388ef02df114f7da434aa2c059b689815",
+  "public_upload": false,
+  "total_timeout_seconds": 1450,
+  "stages": [
+    {
+      "name": "export-candidate",
+      "exit_code": 0
+    },
+    {
+      "name": "board",
+      "exit_code": 0
+    }
+  ],
+  "candidate_manifest_sha256": "782ae4f1f8e96a86c5d2fe38c5fd153467f4f1a9dbbb7cd75da2f4105940ce36",
+  "all_csv_cells_match": true,
+  "columns": 7,
+  "samples": 3,
+  "actual_csv": [
+    [
+      "version",
+      "1"
+    ],
+    [
+      "Clock Domain Name",
+      "BaseClock",
+      "Base Multiplier",
+      "1",
+      "Base Divisor",
+      "1"
+    ],
+    [
+      "label",
+      "local_cycle",
+      "AutoCounterModule_dut_ENABLED",
+      "AutoCounterModule_dut_child_ODD_LFSR",
+      "AutoCounterModule_dut_MULTIBIT_EVENT",
+      "AutoCounterModule_dut_PASSTHROUGH",
+      "AutoCounterModule_dut_ENABLED_DIV_4"
+    ],
+    [
+      "description",
+      "Clock cycles elapsed in the local domain.",
+      "Enabled cycles, should be identical to cycle count minus reset cycles",
+      "Number of cycles the LFSR is has an odd value",
+      "A multibit event. Here's a quote: \" and a comma: , to check description serialization.",
+      "A multibit that is preserved and not accumulated",
+      "Count the number of times the enabled cycle count is divisible by 4. Should be equal to number of cycles minus reset cycles divided by 4"
+    ],
+    [
+      "type",
+      "Accumulate",
+      "Accumulate",
+      "Accumulate",
+      "Accumulate",
+      "Identity",
+      "Accumulate"
+    ],
+    [
+      "event width",
+      "1",
+      "1",
+      "1",
+      "4",
+      "64",
+      "1"
+    ],
+    [
+      "accumulator width",
+      "64",
+      "64",
+      "64",
+      "64",
+      "64",
+      "64"
+    ],
+    [
+      "1000",
+      "1000",
+      "998",
+      "509",
+      "7461",
+      "81985530642677487",
+      "250"
+    ],
+    [
+      "2000",
+      "2000",
+      "1998",
+      "987",
+      "14985",
+      "81985530642677487",
+      "500"
+    ],
+    [
+      "3000",
+      "3000",
+      "2998",
+      "1472",
+      "22461",
+      "81985530642677487",
+      "750"
+    ]
+  ],
+  "expected_csv": [
+    [
+      "version",
+      "1"
+    ],
+    [
+      "Clock Domain Name",
+      "BaseClock",
+      "Base Multiplier",
+      "1",
+      "Base Divisor",
+      "1"
+    ],
+    [
+      "label",
+      "local_cycle",
+      "AutoCounterModule_dut_ENABLED",
+      "AutoCounterModule_dut_ENABLED_DIV_4",
+      "AutoCounterModule_dut_MULTIBIT_EVENT",
+      "AutoCounterModule_dut_child_ODD_LFSR",
+      "AutoCounterModule_dut_PASSTHROUGH"
+    ],
+    [
+      "description",
+      "Clock cycles elapsed in the local domain.",
+      "Enabled cycles, should be identical to cycle count minus reset cycles",
+      "Count the number of times the enabled cycle count is divisible by 4. Should be equal to number of cycles minus reset cycles divided by 4",
+      "A multibit event. Here's a quote: \" and a comma: , to check description serialization.",
+      "Number of cycles the LFSR is has an odd value",
+      "A multibit that is preserved and not accumulated"
+    ],
+    [
+      "type",
+      "Accumulate",
+      "Accumulate",
+      "Accumulate",
+      "Accumulate",
+      "Accumulate",
+      "Identity"
+    ],
+    [
+      "event width",
+      "1",
+      "1",
+      "1",
+      "4",
+      "1",
+      "64"
+    ],
+    [
+      "accumulator width",
+      "64",
+      "64",
+      "64",
+      "64",
+      "64",
+      "64"
+    ],
+    [
+      "1000",
+      "1000",
+      "998",
+      "250",
+      "7461",
+      "509",
+      "81985530642677487"
+    ],
+    [
+      "2000",
+      "2000",
+      "1998",
+      "500",
+      "14985",
+      "987",
+      "81985530642677487"
+    ],
+    [
+      "3000",
+      "3000",
+      "2998",
+      "750",
+      "22461",
+      "1472",
+      "81985530642677487"
+    ]
+  ],
+  "actual_output_sha256": "355ca0a1c22d1e9ac6060269dd23b772a63fd7309119dd6a04afcf0defca6edf",
+  "cpu_result_sha256": "2e1464cc0f989ba24b122aadc295d9e719987c2509391a4085d19172df7d31aa",
+  "board_evidence": "<V80_WORKSPACE>/upstream/runs/20261026-autocounter-r1-board-acceptance/board-acceptance.json",
+  "scope": "Complete upstream AutoCounterModule CSV against matching CPU target RTL; no AutoILA acceptance",
+  "elapsed_seconds": 86.49500147000072
+}

@@ -1,0 +1,13 @@
+[
+  "<V80_WORKSPACE>/framework/cy-clone/chipyard/.conda-env/lib/jvm/bin/java",
+  "-Xmx8G",
+  "-XX:ActiveProcessorCount=8",
+  "-Dsbt.ivy.home=<V80_WORKSPACE>/framework/cy-clone/chipyard/sims/firesim/sim/.ivy2",
+  "-Dsbt.global.base=<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/sim/.sbt",
+  "-Dsbt.boot.directory=<HOME>/.sbt/boot",
+  "-Dsbt.supershell=false",
+  "-Dsbt.server.autostart=false",
+  "-jar",
+  "sbt-launch.jar",
+  "midas/testOnly midas.tests.AutoCounterBackpressureSpec midas.tests.BankConflictDefaultsSpec midas.tests.BankConflictModelSpec midas.tests.DDRManagedStreamEngineSpec midas.tests.MCRFileSpec midas.tests.MCRPaddingSpec midas.tests.SlashDDRStreamDMASpec midas.tests.SlashDDRStreamIntegrationSpec midas.tests.SlashDebugAuditSpec midas.tests.AutoILAAXISSpec midas.stage.FASEDHeaderSpec midas.stage.FASEDResponseSpec midas.stage.FASEDHostTimingSpec midas.stage.GoldenGateCompilerPhaseSpec midas.stage.HostTimingSpec midas.stage.SlashFPGAManagedPlatformSpec midas.stage.SlashMMIOPlatformSpec midas.stage.SlashPlatformSpec midas.stage.SlashDebugPlatformSpec midas.stage.SynchronousRAMSpec midas.stage.SynchronousRAMHostTimingSpec"
+]

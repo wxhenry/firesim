@@ -1,0 +1,36 @@
+{
+  "hardware_access": false,
+  "variants": {
+    "legacy": {
+      "build_exit_code": 0,
+      "cases": {
+        "no-stream": 0,
+        "legacy-cpu": 0,
+        "legacy-fpga": 0,
+        "shared-rings": 0,
+        "shared-overflow": 0,
+        "shared-small": 0,
+        "shared-channels": 0
+      }
+    },
+    "ddr": {
+      "build_exit_code": 0,
+      "cases": {
+        "roundtrip": 0,
+        "zero": 0,
+        "invalid": 0,
+        "small-staging": 0
+      }
+    },
+    "mmio": {
+      "build_exit_code": 0,
+      "cases": {
+        "roundtrip": 0,
+        "zero": 0,
+        "invalid": 0
+      }
+    }
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 33.766802418002044
+}
