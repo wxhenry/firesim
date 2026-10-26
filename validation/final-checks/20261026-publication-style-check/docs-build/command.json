@@ -1,0 +1,11 @@
+[
+  "<V80_WORKSPACE>/upstream/review/publication-docs-venv-20261026/bin/python",
+  "-m",
+  "sphinx",
+  "-b",
+  "html",
+  "-d",
+  "<V80_WORKSPACE>/upstream/runs/20261026-publication-style-check/doctrees",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/docs",
+  "<V80_WORKSPACE>/upstream/runs/20261026-publication-style-check/html"
+]

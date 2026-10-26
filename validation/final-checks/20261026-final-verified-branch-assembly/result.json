@@ -1,0 +1,98 @@
+{
+  "exit_code": 0,
+  "public_upload": false,
+  "hardware_access": false,
+  "branches": [
+    {
+      "part": 1,
+      "branch": "v80-slash-01-midas",
+      "commit": "d7beaf26ea744ae2e0dcafcb640cc7267aedf3ee",
+      "tree": "a63ce084546558b7833e4662cdf212d7186f7932",
+      "tested_boundary": "b1a2b01c75b0637f15378ea8f0bdd48b1e70db15",
+      "nonfunctional_deltas": [
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala"
+      ],
+      "sha256": {
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala": "284e2c20db78918da2269239a2273b252352ea7ffecca12c9c26cba560c9c464",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala": "87efe529ec8abe63de1ea5b809b21258714bcfcca78d0771790c070b3b6e723f"
+      }
+    },
+    {
+      "part": 2,
+      "branch": "v80-slash-02-runtime",
+      "commit": "9ef45c436d60a439e0b4d256eb3f4ddf5229af78",
+      "tree": "770c6e2c7bcbfa750681e1f1c6cea21577321705",
+      "tested_boundary": "a07abd7a042ec6ead342db60ab0fe00f65514663",
+      "nonfunctional_deltas": [
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala"
+      ],
+      "sha256": {
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala": "284e2c20db78918da2269239a2273b252352ea7ffecca12c9c26cba560c9c464",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala": "87efe529ec8abe63de1ea5b809b21258714bcfcca78d0771790c070b3b6e723f"
+      }
+    },
+    {
+      "part": 3,
+      "branch": "v80-slash-03-platform",
+      "commit": "0ae7c96302f553992ee9eb540fe9d0dff35e0d3b",
+      "tree": "8bb8e4f87b42772503b94bfcafd3a597ed0d27bd",
+      "tested_boundary": "8240c34016481e99001ffcef29d1b95822287a13",
+      "nonfunctional_deltas": [
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala"
+      ],
+      "sha256": {
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala": "284e2c20db78918da2269239a2273b252352ea7ffecca12c9c26cba560c9c464",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala": "87efe529ec8abe63de1ea5b809b21258714bcfcca78d0771790c070b3b6e723f",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala": "d7895c2e45652c8a567eb4c33ff0d539b16dd7c8c8ccec7e000dce86e3e95ca0",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala": "9453f004734508c7ab9c3f0740441c11a0fea6bf3db97ba54e0135cb120422b6"
+      }
+    },
+    {
+      "part": 4,
+      "branch": "v80-slash-04-manager",
+      "commit": "40aa1adff89fcb81934bb71888713218d7f61143",
+      "tree": "5933d8e2aca274e373940fa9e606b923d61d2a92",
+      "tested_boundary": "775352329d91adc4125201c3d617af9103f17feb",
+      "nonfunctional_deltas": [
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala"
+      ],
+      "sha256": {
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala": "284e2c20db78918da2269239a2273b252352ea7ffecca12c9c26cba560c9c464",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala": "87efe529ec8abe63de1ea5b809b21258714bcfcca78d0771790c070b3b6e723f",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala": "d7895c2e45652c8a567eb4c33ff0d539b16dd7c8c8ccec7e000dce86e3e95ca0",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala": "9453f004734508c7ab9c3f0740441c11a0fea6bf3db97ba54e0135cb120422b6"
+      }
+    },
+    {
+      "part": 5,
+      "branch": "v80-slash-05-docs",
+      "commit": "f456e5eeb5f7b566cca5123b5ce0ab59125513ab",
+      "tree": "6795bd54d0a29dd419a0dc6be7909966ed9032d8",
+      "tested_boundary": "493f57d533065c138ba55bf1a17b70bd0be52777",
+      "nonfunctional_deltas": [
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala",
+        "docs/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-V80-SLASH-FPGAs.rst"
+      ],
+      "sha256": {
+        "sim/midas/src/main/scala/midas/stage/GoldenGateCompilerPhase.scala": "284e2c20db78918da2269239a2273b252352ea7ffecca12c9c26cba560c9c464",
+        "sim/midas/src/test/scala/midas/stage/SynchronousRAMSpec.scala": "87efe529ec8abe63de1ea5b809b21258714bcfcca78d0771790c070b3b6e723f",
+        "sim/midas/src/main/scala/midas/passes/HostTargetOutputIsolator.scala": "d7895c2e45652c8a567eb4c33ff0d539b16dd7c8c8ccec7e000dce86e3e95ca0",
+        "sim/midas/src/test/scala/midas/stage/SlashMMIOPlatformSpec.scala": "9453f004734508c7ab9c3f0740441c11a0fea6bf3db97ba54e0135cb120422b6",
+        "docs/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-V80-SLASH-FPGAs.rst": "1f9d76f1c58ee45b5a0b6e355411ffb40d27154718e71dd44a7fb3d861bc269d"
+      }
+    }
+  ],
+  "evidence_initial_commit": "9e3cc593898089a4cd467e78bfaad22ce6f34600",
+  "delta_explanation": "GoldenGate alignment; unused RAM-test lambda name; unused imports; MMIO-test alignment; RST formatting and current physical-scope paragraph. No native/FPGA logic change."
+}

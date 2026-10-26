@@ -1,0 +1,37 @@
+{
+  "exit_code": 1,
+  "hardware_access": false,
+  "public_upload": false,
+  "total_timeout_seconds": 1200,
+  "stages": [
+    {
+      "name": "branch",
+      "exit_code": 0
+    },
+    {
+      "name": "scala-format",
+      "exit_code": 0
+    },
+    {
+      "name": "rst-format",
+      "exit_code": 0
+    },
+    {
+      "name": "scala-fix-check",
+      "exit_code": 1
+    },
+    {
+      "name": "scala-format-check",
+      "exit_code": 0
+    },
+    {
+      "name": "rst-format-check",
+      "exit_code": 0
+    },
+    {
+      "name": "docs-build",
+      "exit_code": 0
+    }
+  ],
+  "elapsed_seconds": 77.02081322799495
+}

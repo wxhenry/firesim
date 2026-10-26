@@ -1,0 +1,34 @@
+{
+  "exit_code": 1,
+  "hardware_access": false,
+  "public_upload": false,
+  "total_timeout_seconds": 900,
+  "stages": [
+    {
+      "name": "venv",
+      "exit_code": 0
+    },
+    {
+      "name": "install",
+      "exit_code": 0
+    },
+    {
+      "name": "rst-format",
+      "exit_code": 1
+    },
+    {
+      "name": "manager-format",
+      "exit_code": 0
+    },
+    {
+      "name": "scala-format",
+      "exit_code": 1
+    },
+    {
+      "name": "docs-build",
+      "exit_code": 1
+    }
+  ],
+  "commit": "493f57d533065c138ba55bf1a17b70bd0be52777",
+  "elapsed_seconds": 45.58280698501039
+}

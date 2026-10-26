@@ -1,0 +1,5 @@
+[
+  "<V80_WORKSPACE>/upstream/review/publication-docs-venv-20261026/bin/docstrfmt",
+  "-i",
+  "<V80_WORKSPACE>/upstream/firesim-pr01-standalone-20261026/docs/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-V80-SLASH-FPGAs.rst"
+]

@@ -11,3 +11,5 @@ The source series builds on official main 9db588176c19e7252ed3027b2028bc21095f86
 Current physical results cover GCD, three Rocket ISA tests, Linux boot/private-disk I/O/HTIF poweroff, three target-to-host Printf modes, AutoCounter, Manager launch/completion/collection and the AutoILA hardware/debug path. AutoILA capture used a private host extension; the public launcher has no automatic capture interface. Host-to-target streams have CPU evidence, not matching physical stream qualification. No guest NIC, other memory-model, multi-card or static-v3 isolation qualification is claimed. Historical PCIe fault causation and fault containment remain unresolved.
 
 Text-only logs are selected and local paths sanitized; provenance and manifests bind both versions. Vendor images/checkpoints/generated RTL, SDK sources, private host configuration, credentials and raw system logs are excluded. Historical public_upload=false fields describe local collection, not current branch visibility.
+
+[Final checks and published-source mapping](final-checks/README.md) record the lint-only deltas and affected regression rerun.

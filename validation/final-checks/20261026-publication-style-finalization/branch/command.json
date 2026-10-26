@@ -1,0 +1,6 @@
+[
+  "git",
+  "switch",
+  "-c",
+  "review/final-format"
+]

@@ -1,0 +1,6 @@
+[
+  "python3",
+  "-m",
+  "venv",
+  "<V80_WORKSPACE>/upstream/review/publication-docs-venv-20261026"
+]
