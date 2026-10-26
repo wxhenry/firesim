@@ -22,7 +22,7 @@ def main():
     parser.add_argument("--cxx", default=os.environ.get("CXX", "g++"))
     parser.add_argument("--timeout", type=float, default=180,
                         help="Total build/test deadline in seconds (default: 180)")
-    parser.add_argument("--suite", choices=["all", "fased", "simulation", "scheduler"], default="all")
+    parser.add_argument("--suite", choices=["all", "fased", "simulation", "scheduler", "loadmem", "fpga-stream", "fpga-push", "fpga-flush"], default="all")
     args = parser.parse_args()
     if args.timeout <= 0:
         parser.error("--timeout must be positive")
@@ -51,9 +51,16 @@ def main():
             "init-timeout-plus", "init-timeout-space", "init-timeout-duplicate",
             "init-timeout-min", "init-timeout-max"]),
         "scheduler": ("fased_scheduler_test.cc", ["profile-lifetime", "no-profile"]),
-
+        "loadmem": ("loadmem_transport_test.cc", [
+            f"{case}-{width}" for width in (64, 512) for case in (
+                "legacy-single", "legacy-chunk", "bulk-single", "bulk-chunk",
+                "declined", "flush-read", "mixed", "flush-zero", "legacy-file",
+                "bulk-file", "zero-length")]),
+        "fpga-push": ("fpga_stream_push_test.cc", ["pull-init", "init", "linear", "wrap", "required", "full", "zero", "invalid", "invalid-ring", "corrupt-credit", "unaligned-credit", "doorbell-timeout", "consume-timeout", "flush-timeout", "flush", "counter-wrap"]),
+        "fpga-stream": ("fpga_stream_sync_test.cc", ["linear", "wrap", "required", "zero"]),
+        "fpga-flush": ("fpga_stream_flush_test.cc", ["immediate", "slow-progress", "timeout", "io-error"]),
     }
-    files.extend(["bridges/peek_poke.cc", "core/systematic_scheduler.cc"])
+    files.extend(["bridges/peek_poke.cc", "core/systematic_scheduler.cc", "bridges/fpga_managed_stream.cc"])
     top = args.source_root.resolve() / "sim/src/main/cc/fasedtests/fasedtests_top.cc"
     fingerprint_files = sorted(set(source.rglob("*.h")) | {source / f for f in files}
                                | set(tests.glob("*.cc")) | {top, Path(__file__).resolve()})

@@ -30,7 +30,7 @@ exercise finite C++ operations against deterministic registers.
 | Suite | Coverage |
 | --- | --- |
 | `fased` (12 cases) | Histogram/range address-map lifetime; exact model indices; independent model output files; hardware-default option isolation; full uint32 decimal/hexadecimal values; invalid numeric input |
-| `simulation` (7 cases) | Failures reported during bridge finalization; earlier run failures preserved; deterministic first finalization failure; successful and nonterminating bridges; timeout behavior |
+| `simulation` (24 cases) | Failures reported during bridge finalization; earlier run failures preserved; deterministic first finalization failure; successful and nonterminating bridges; timeout behavior; pending initialization and immediate rejection of invalid/unavailable INIT_DONE reads; bounded and paced initialization polling; strict timeout parsing |
 | `scheduler` (2 cases) | Actual FASED top-level profiling callback after its constructor returns; repeated profiling intervals; profiling-disabled control |
 
 The scheduler test includes the production `fasedtests_top.cc` because that driver
@@ -39,19 +39,26 @@ scheduler, with a real FASED driver recording register reads. The simulation tes
 run the real initialization, fingerprint, clock and finalization flow, using a test
 bridge that reports its error only after `finish()`.
 
+Initialization polls immediately, then waits one millisecond between pending
+responses, with a default 60-second deadline. `+init-timeout-ms=N` selects an
+integer from 1 through 600000; duplicate and malformed options fail. The deadline
+and pacing tests use short real waits and verify that initialization failures do
+not proceed to fingerprint, clock or bridge accesses. These limits apply only
+when register reads return; they cannot interrupt a stalled hardware access.
+
 AddressSanitizer stack-use-after-return detection is enabled. Leak checking is
 disabled because `AddrRangeCounter` has an existing raw allocation without a
 destructor; these regressions do not claim leak-free operation. They also do not
 establish generated-RTL correctness, FPGA compatibility or hardware acceptance.
 
-## Initialization, entry and widget-control regressions
+Native entry-point regressions compile the production `main.cc` with an entry
+stub that returns success/failure or throws standard/nonstandard exceptions:
 
-The simulation suite also rejects invalid INIT_DONE values and bounds returned
-pending responses with a paced initialization deadline. The deadline cannot
-interrupt a blocked physical access. `run_entry_tests.py --output <new-directory>`
-checks native exception reporting and cleanup.
+```sh
+python3 sim/midas/src/test/cc/run_entry_tests.py --output /tmp/midas-entry-tests
+```
 
-The Scala suites `midas.MCRFileSpec` and `midas.MCRPaddingSpec` compile the actual
-MCRFile into Verilator models. They check stable AXI responses under backpressure,
-one source handshake per request, reset while a response is pending, and
-completion of padding slots without accessing a real register.
+The four ASan cases verify exit codes, error messages, local stack unwinding and
+global cleanup. They do not instantiate a simulation interface or access devices.
+The runner requires a new output directory and defaults to a 60-second total
+deadline. Each child is bounded and raw logs/source fingerprints are preserved.
